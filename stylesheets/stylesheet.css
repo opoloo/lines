@@ -39,7 +39,7 @@ ol, ul {
 
 a {
   text-decoration: none;
-  color: #ccc;
+  color: #872121;
   transition: all 0.5s ease; }
 
 a:hover {
@@ -49,7 +49,7 @@ h1 {
   font-weight: 700;
   font-size: 2.200em;
   line-height: 1em;
-  margin: 0px 0 20px 0;
+  margin: 15px 0 15px 0;
   padding: 0 0 0px 0;
   color: #544f4e;
   display: block;
@@ -141,23 +141,23 @@ header h1 {
   width:100%;
 }
 
-#meta #logo {
-  float: left; }
-
-#meta img {
-  margin: 15px 0 0 0; }
 
 #meta nav {
   text-transform: uppercase;
-  font-size: 0.900em;
-  font-weight: 500;
-  float:left;}
+  font-size: 0.850em;
+  font-weight: 400;
+  float:left;
+  font-family: 'Ubuntu', sans-serif; 
+  }
   
 
 #meta nav ul li {
   float: left;
   margin: 0 0 0 50px; }
   
+#meta nav ul li#logo {
+  margin:7px 0 0 0px;
+}
   
 #meta nav ul li a {
   color:#e1bdbd;
@@ -168,6 +168,13 @@ header h1 {
 }
 
 
+#teaser {
+  font-family: 'Ubuntu', sans-serif; 
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.8em;
+}
+
 
 /*-----------------------------------------------------------*/
 /*-----------------------------------------------------------*/
@@ -175,9 +182,14 @@ header h1 {
 /*-----------------------------------------------------------*/
 /*-----------------------------------------------------------*/
 
-content {
+div#content {
   padding:80px 0 0 0;
   display:block;
+}
+
+div#content a {
+  font-style: italic;
+  font-size:1.1em;
 }
 
 

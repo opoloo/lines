@@ -26,19 +26,17 @@
 
 
 <body>
-<a href="https://github.com/you"><img style="position: fixed; top: 0; right: 0; border: 0;z-index:9999;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub"></a>
 <div id="meta">
 	<div class="wrapper">
-		<div id="logo">
-			<a href="/"><img src="images/logo.png" alt="Logo LINES" /></a>
-		</div>
 		<nav>
 			<ul>
-				<li><a href="">View</a></li>
-				<li><a href="">Editor</a></li>
+				<li id="logo"><a href=""><a href="/"><img src="images/logo.png" alt="Logo LINES" /></a></li>
 				<li><a href="">Features</a></li>
+				<li><a href="">Documentation</a></li>
+				<li><a href="">Installation</a></li>
+				<li><a href="">Contribute</a></li>
+				<li><a href="https://github.com/you"><img style="position: fixed; top: 0; right: 0; border: 0;z-index:9999;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub"></a></li>
 			</ul>
-		</nav>
 		<div class="clearfix"></div>
 	</div>
 </div>
@@ -46,26 +44,43 @@
 	<div class="wrapper">
 		<div id="head">
 			<div id="teaser">
-				<h1>Simple Publishing on Rails</h1>
+				Simple Publishing on Rails
 			</div>
 			<div class="intro">
-				You've been waiting for this*
-				<p>*You are a Rails developer. You care about your writing and a beautiful, mobile-optimized presentation. You appreciate a solid editing system without unnecessary buzz.
-				Lines is a beautiful blog template for developers, built with Ruby on Rails.</p>
+				<h1>The open source blog platform you* <br/>have been waiting for.</h1>
+				<p>*You are a Ruby on Rails developer. 
+				You care about your writing and a beautiful, mobile-optimized presentation. 	
+				You appreciate a solid editing system without unnecessary buzz. 		
+				You want full control.</p>
 			</div>
 		</div>
 	</div>
 </header>
 
-<content>
+<div id="content">
 	<div class="wrapper">
-		<div class="two-cols">
-			<h2>Features</h2>
-			<p>LINES is a blog framework for developers with a strong focus on a simple, consistent publishing process and clear, responsive presentation. It's customizable and puts your content first.</p>
+		<div id="features">
+			<h2>Enjoy simple, responsive, customizable publishing</h2>
+			<div class="three-cols">
+				<p>Manage</p>	
+			</div>
+			<div class="three-cols">
+				<p>Create & Edit</p>
+			</div>
+			<div class="three-cols">
+				<p>Publish</p>
+			</div>
 		</div>
-		<div class="two-cols">
-			<h2>Documentation</h2>
-			<p>We stuck closely to the code conventions, so you'll have no trouble modifying it to your needs. The complete documentation is on GitHub. We highly recommend a look at the readme file.</p>
+		<div class="clearfix"></div>
+		<div id="installation">
+			<h2>Installation</h2>
+			<div class="two-cols">
+				<p>1. Clone Repo</p>
+			</div>
+			<div class="two-cols">
+			
+			</div>
+			<div class="clearfix"></div>
 		</div>
 		<div class="clearfix"></div>
 		<hr/>
@@ -89,22 +104,14 @@
 			<div class="clearfix"></div>
 		</div>
 		
-		<div class="three-cols">
-		
-		</div>
-		<div class="three-cols">
-		
-		</div>
-		<div class="three-cols">
-		
-		</div>
+
 		<hr/>
 		<div id="whatsnot">
 			<h3>What it's not</h3>
 			<p>LINES is a very young publishing platform, built up from the ground. It needs people, work, and time to mature. It won't replace your Wordpresses, Bloggers or Squarespaces anytime soon. Instead, LINES offers a solid starting point for Rails- and web-developers that want to cut the crap and focus on their content, with the freedom of full OSS access.</p>
 		</div>
 	</div>
-</content>
+</div>
 <div id="footer">
   <div id="copyright">
 	<span class="about">LINES is a project by opoloo. Find us on Google Plus & Twitter or write us an email to info@opoloo.de
