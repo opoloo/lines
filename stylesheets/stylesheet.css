@@ -1,0 +1,289 @@
+/*-----------------------------------------------------------*/
+/*-----------------------------------------------------------*/
+/*-------------------------  GENERAL  -----------------------*/
+/*-----------------------------------------------------------*/
+/*-----------------------------------------------------------*/
+img, div {
+  behavior: url(iepngfix.htc);
+  border: 0px;
+  margin: 0px;
+  padding: 0px; }
+
+img {
+  max-width: 100%;
+  height: auto;
+  width: auto\9; }
+
+* {
+  margin: 0px;
+  padding: 0px; }
+
+body {
+  font-family: 'Gentium Basic', serif;
+  font-size: 1.125em;
+  background-color: #f2f2f2;
+  line-height: 1.5em;
+  height: 100%;
+  color: #282424; }
+
+a img, :link img, :visited img {
+  border-bottom: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%; }
+
+ol, ul {
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  color: #ccc;
+  transition: all 0.5s ease; }
+
+a:hover {
+  color: #3d3d3d; }
+
+h1 {
+  font-weight: 700;
+  font-size: 2.200em;
+  line-height: 1em;
+  margin: 0px 0 20px 0;
+  padding: 0 0 0px 0;
+  color: #544f4e;
+  display: block;
+  letter-spacing: 0em;}
+
+
+h2 {
+  font-size: 1.722em;
+  line-height: 1em;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  letter-spacing: 0.01em;
+  font-weight: 100;
+  margin: 0px 0 10px 0;
+  padding: 0 0 0 0px;
+  text-align: left;
+  color: #544f4e;
+  }
+
+
+h3 {
+  font-family: 'Gentium Basic', serif;
+  color: #544f4e;
+}
+
+
+.one-col {
+  max-width: 960px;
+  text-align: left;
+  margin: 0px auto 0px auto; }
+
+.two-cols {
+  float: left;
+  max-width: 440px;
+  margin: 0 40px 0 0; }
+
+.two-cols:last-child {
+  margin: 0px; }
+
+.three-cols {
+  float: left;
+  max-width: 300px;
+  margin: 0 30px 0 0; }
+
+.three-cols:last-child {
+  margin: 0px; }
+
+.two-thirds {
+  float: left;
+  max-width: 600px;
+  display: inline-block; }
+
+
+.wrapper {
+  max-width: 960px;
+  margin: 0px auto; }
+
+/*-----------------------------------------------------------*/
+/*-----------------------------------------------------------*/
+/*-----------------------  2. HEADER  -----------------------*/
+/*-----------------------------------------------------------*/
+/*-----------------------------------------------------------*/
+
+
+#head {
+  padding:50px 80px 100px 80px;
+}
+
+header {
+  padding:100px 0 0 0;
+  text-align: center;
+  font-size:1.111em;
+  background:url('../images/header_dummy.png') top center no-repeat #872121;
+  color:#e1bdbd;
+}
+
+header h1 {
+  color:#fff;
+}
+
+
+#meta {
+  background-color:#fff;
+  background: rgba(135, 33, 33, 0.9); 
+  height:60px;
+  line-height:60px;
+  position: fixed;
+  top:0px;
+  display:block;
+  width:100%;
+}
+
+#meta #logo {
+  float: left; }
+
+#meta img {
+  margin: 15px 0 0 0; }
+
+#meta nav {
+  text-transform: uppercase;
+  font-size: 0.900em;
+  font-weight: 500;
+  float:left;}
+  
+
+#meta nav ul li {
+  float: left;
+  margin: 0 0 0 50px; }
+  
+  
+#meta nav ul li a {
+  color:#e1bdbd;
+}
+
+#meta nav ul li a:hover {
+  color:#fff;
+}
+
+
+
+/*-----------------------------------------------------------*/
+/*-----------------------------------------------------------*/
+/*----------------------  3. CONTENT  -----------------------*/
+/*-----------------------------------------------------------*/
+/*-----------------------------------------------------------*/
+
+content {
+  padding:80px 0 0 0;
+  display:block;
+}
+
+
+
+#whatsnot {
+  text-align: center;
+}
+
+
+
+/*-----------------------------------------------------------*/
+/*-----------------------------------------------------------*/
+/*-----------------------  4. FOOTER  -----------------------*/
+/*-----------------------------------------------------------*/
+/*-----------------------------------------------------------*/
+
+
+#footer {
+  max-width: 100%;
+  padding: 110px 0px;
+  font-family: 'Ubuntu Condensed', sans-serif; }
+
+
+#copyright {
+  margin: 0px auto 0px auto;
+  text-align: center;
+  max-width: 960px;
+  color: #999;
+  letter-spacing: 0.03em; }
+
+#copyright a {
+  border-bottom: none;
+  color: #666; }
+
+#copyright a:hover {
+  color: #333; }
+
+#copyright span {
+  display: block;
+  margin: 0 0 15px 0; }
+
+#copyright span.signet {
+  margin: 30px 0 0px 0;
+  display: block; }
+
+#copyright span.signet a {
+  display: inline-block;
+  width: 131px;
+  height: 127px;
+  background: url("../images/signet-opoloo.png") 0px 0px no-repeat;
+  border-bottom: none;
+  transition: none; }
+
+#copyright span.signet a:hover {
+  background: url("../images/signet-opoloo.png") 0 -191px no-repeat; }
+
+a.nostyle {
+  border: 0px none;
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none; }
+
+/*-----------------------------------------------------------*/
+/*-----------------------------------------------------------*/
+/*-------------------------  MISC  --------------------------*/
+/*-----------------------------------------------------------*/
+/*-----------------------------------------------------------*/
+
+
+
+div.download_button {
+  float:right;
+  text-transform:uppercase;
+}
+
+div.download_button a {
+  background-color:#872121;
+  padding:7px 15px;
+  color:#fff;
+}
+
+div.download_button a span {
+  color:#e1bdbd;
+  text-transform: none;
+}
+
+hr {
+  line-height: 0px;
+  max-width: 100%;
+  height: 3px;
+  font-size: 0;
+  border: 0px;
+  background-color: #e2e2e2;
+  margin: 50px 0;
+  clear:both;
+}
+
+.show_mobile {
+  display: none; }
+
+.download-mobile a {
+  display: none; }
+
+#icons-mobile {
+  display: none; }
+
+.clearfix {
+  float: none;
+  clear: both; }
