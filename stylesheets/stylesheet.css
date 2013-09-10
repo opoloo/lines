@@ -76,9 +76,10 @@ h3 {
 
 
 .one-col {
-  max-width: 960px;
+  max-width: 650px;
   text-align: left;
-  margin: 0px auto 0px auto; }
+  margin:0px auto;
+}
 
 .two-cols {
   float: left;
@@ -88,13 +89,14 @@ h3 {
 .two-cols:last-child {
   margin: 0px; }
 
-.three-cols {
+div.three-cols {
   float: left;
-  max-width: 300px;
+  max-width: 290px;
   margin: 0 30px 0 0; }
 
-.three-cols:last-child {
-  margin: 0px; }
+div.three-cols:last-child {
+  margin-right: 0px; }
+
 
 .two-thirds {
   float: left;
@@ -121,12 +123,20 @@ header {
   padding:100px 0 0 0;
   text-align: center;
   font-size:1.111em;
-  background:url('../images/header_dummy.png') top center no-repeat #872121;
+  background:url('../images/header_dummy.png') 50% 0 no-repeat #872121 fixed;
+  background-position: fixed;
   color:#e1bdbd;
+  margin: 0 auto;
 }
 
-header h1 {
+header h1, header h2, header h3  {
   color:#fff;
+}
+
+header h2 {
+  text-align: center;
+  margin:0 0 15px 0;
+  display:block;
 }
 
 
@@ -175,6 +185,15 @@ header h1 {
   font-size: 0.8em;
 }
 
+#desc {
+  text-align: left;
+  padding:0 0 0px 0;
+}
+
+#desc img {
+  margin:10px 0px;
+}
+
 
 /*-----------------------------------------------------------*/
 /*-----------------------------------------------------------*/
@@ -192,11 +211,21 @@ div#content a {
   font-size:1.1em;
 }
 
+div#content ul {
+  margin:10px 0 0 0;  
+}
 
+div#content ul li {
+  margin:10px 0 0 0;  
+  color:#666;
+}
 
-#whatsnot {
+div#content #devices {
+  margin:40px 0 0 0;
+  width:960px;
   text-align: center;
 }
+
 
 
 
@@ -259,6 +288,10 @@ a.nostyle {
 /*-----------------------------------------------------------*/
 
 
+.center {
+  text-align: center;
+}
+
 
 div.download_button {
   float:right;
@@ -299,3 +332,5 @@ hr {
 .clearfix {
   float: none;
   clear: both; }
+  
+
