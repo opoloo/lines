@@ -40,7 +40,12 @@ ol, ul {
 a {
   text-decoration: none;
   color: #872121;
-  transition: all 0.5s ease; }
+  transition: all 0.5s ease;
+  border-bottom:1px solid #ccc;}
+  
+a img, a:img, img, img:link, img:focus {
+  border-bottom:none;
+}
 
 a:hover {
   color: #3d3d3d; }
@@ -112,7 +117,7 @@ div.three-cols:last-child {
   
 tt {
   padding:10px;
-  background-color:#e7e5e5;
+  background-color:#f2f2f2;
 }
 
 .float-left {
@@ -135,14 +140,17 @@ header {
   padding:100px 0 0 0;
   text-align: center;
   font-size:1.111em;
-  background:url('../images/header_dummy.png') 50% 0 no-repeat #872121 fixed;
+  /*background:url('../images/header_dummy.png') 50% 0 no-repeat #872121 fixed;*/
+  background:url('../images/header.png') 50% 0 no-repeat #ededee fixed;
   background-position: fixed;
-  color:#e1bdbd;
+  /*color:#e1bdbd;*/
+  color:#423d3d;
   margin: 0 auto;
+  border-bottom:3px solid #e2e2e2;
 }
 
 header h1, header h2, header h3  {
-  color:#fff;
+  color:#333;
 }
 
 header h2 {
@@ -154,7 +162,7 @@ header h2 {
 
 #meta {
   background-color:#fff;
-  background: rgba(135, 33, 33, 0.9); 
+  background: rgba(255, 255, 255, 0.9); 
   height:60px;
   line-height:60px;
   position: fixed;
@@ -180,13 +188,18 @@ header h2 {
 #meta nav ul li#logo {
   margin:7px 0 0 0px;
 }
+
+#meta nav ul li#logo a {
+  border-bottom:none;
+}
   
 #meta nav ul li a {
-  color:#e1bdbd;
+  color:#872121;
+  border-bottom: none;
 }
 
-#meta nav ul li a:hover {
-  color:#fff;
+#meta nav ul li a:hover, #meta nav ul li a.active {
+  color:#333;
 }
 
 
@@ -246,6 +259,15 @@ div#content #devices {
   display:table-cell;
 }
 
+
+.white_box {
+  background-color:#fff;
+  padding:30px 20px;
+}
+
+.white_box .two-cols {
+  width:440px;
+}
 
 /*-----------------------------------------------------------*/
 /*-----------------------------------------------------------*/

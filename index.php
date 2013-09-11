@@ -36,23 +36,26 @@ $(document).ready(function(){
 	//outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
 	$('header').parallax("50%", 0.4);
 
+
 })
+
 </script>
 
 </head>
 
 
 <body>
+<div id="start"></div>
 <div id="meta">
 	<div class="wrapper">
 		<nav>
 			<ul>
-				<li id="logo"><a href=""><a href="/"><img src="images/logo.png" alt="Logo LINES" /></a></li>
+				<li id="logo"><a href="#start"><img src="images/logo.png" alt="Logo LINES" /></a></li>
 				<li><a href="#features">Features</a></li>
-				<li><a href="#docu">Documentation</a></li>
 				<li><a href="#installation">Installation</a></li>
+				<li><a href="#docu">Documentation</a></li>
 				<li><a href="#contribute">Contribute</a></li>
-				<li><a href="https://github.com/you"><img style="position: fixed; top: 0; right: 0; border: 0;z-index:9999;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub"></a></li>
+				<li><a href="https://github.com/you"><img style="position: fixed; top: 0; right: 0; border: 0;z-index:999;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a></li>
 			</ul>
 		<div class="clearfix"></div>
 	</div>
@@ -80,30 +83,40 @@ $(document).ready(function(){
 			<h2>Enjoy simple, responsive, customizable publishing</h2>
 			<div class="three-cols">
 				<img src="images/screenshot_manage.jpg" alt="Manage" />
-				<h3>Manage</h3>
-				<p>A clear, consistent frontend that focuses on what you need.</p>	
+				<h3>1. Manage</h3>
+				<p>Manage your posts in clear, consistent frontend.</p>	
 			</div>
 			<div class="three-cols">
 				<img src="images/screenshot_create.jpg" alt="Create & Edit" />
-				<h3>Create & Edit</h3>
-				<p>A slim, beautifully designed editor to get your ideas out. </p>
+				<h3>2. Create & Edit</h3>
+				<p>Splash around in your ideas in a slim, beautifully designed editor.</p>
 			</div>
 			<div class="three-cols nomargin">
 				<img src="images/screenshot_publish.jpg" alt="Publish" />
-				<h3>Publish</h3>
-				<p>Your text, code examples, images and links up front.</p>
+				<h3>3. Publish</h3>
+				<p>See your text, code examples, images, and links shine.</p>
 			</div>
 			<div class="clearfix"></div>
 		</div>
 		<hr/>
-		<div id="features">
+		<div id="features" class="white_box">
 			<div class="two-cols">
 				<h2>What it is</h2>
-				<p>LINES is a blog framework for developers with a strong focus on a simple, consistent publishing process and clear, responsive presentation. It's customizable and puts your content first, with the freedom of full OSS access.</p>
+				<ul>
+					<li>a blog framework for developers</li>
+					<li>a simple consistent publishing tool</li>
+					<li>a customizable platform, putting your content first</li>
+					<li>an open source project, giving you all the freedom in the world</li>
+				</ul>
 			</div>
-			<div class="two-cols">
+			<div class="two-cols nomargin">
 				<h2>What it's not</h2>
-				<p>Lines is not Wordpress, Blogger, or Squarespace and doesn't aim to be. It's not a gem or plugin — it's an app. No plugins, no theme craziness, no options-galore, just full focus on publishing and reading. </p>
+				<ul>
+					<li>Wordpress, Blogger, or Squarespace</li>
+					<li>a gem or a plugin</li>
+					<li>an overblown framework with theme craziness</li>
+					<li>an incoherent pile of options</li>
+				</ul>
 			</div>
 			<div class="clearfix"></div>
 		</div>
@@ -123,7 +136,7 @@ $(document).ready(function(){
 			<img src="images/devices.png" alt="Devices" />
 		</div>
 		<hr/>
-		<div id="installation">
+		<div id="installation" class="white_box">
 			<h2>Installation</h2>			
 			<div class="two-cols">
 				<p>1. Clone Repo</p>
@@ -162,7 +175,7 @@ $(document).ready(function(){
 		<hr/>
 		<div id="contribute">
 				<h2>Contribute</h2>
-				<p>Lines is an open source project for a reason. It needs people, work, and time to mature. You can help make this project even greater by giving us feedback, telling us about your concerns, and voicing questions. Contact our developers:</p><br/>
+				<p>LINES is an open source project for a reason. It needs people, work, and time to mature. You can help make this project even greater by giving us feedback, telling us about your concerns, and voicing questions. Contact our developers:</p><br/>
 			<div class="two-cols table">
 				<img src="images/jochen.png" alt="Jochen Greif" class="float-left" />
 				<h3>Jochen Greif</h3>
@@ -181,7 +194,7 @@ $(document).ready(function(){
 </div>
 <div id="footer">
   <div id="copyright">
-	<span class="about">LINES is a project by opoloo. Find us on <a href="">Google Plus</a> & <a href="">Twitter</a> or write us an email to <script type="text/javascript">eval(decodeURIComponent('%64%6f%63%75%6d%65%6e%74%2e%77%72%69%74%65%28%27%3c%61%20%68%72%65%66%3d%5c%22%6d%61%69%6c%74%6f%3a%69%6e%66%6f%40%6f%70%6f%6c%6f%6f%2e%64%65%5c%22%3e%69%6e%66%6f%40%6f%70%6f%6c%6f%6f%2e%64%65%3c%5c%2f%61%3e%27%29%3b'))</script>
+	<span class="about">LINES is a project by opoloo. Find us on <a href="https://plus.google.com/u/0/+Opoloo/posts">Google Plus</a> & <a href="https://twitter.com/Opoloo">Twitter</a> or write us an email to <script type="text/javascript">eval(decodeURIComponent('%64%6f%63%75%6d%65%6e%74%2e%77%72%69%74%65%28%27%3c%61%20%68%72%65%66%3d%5c%22%6d%61%69%6c%74%6f%3a%69%6e%66%6f%40%6f%70%6f%6c%6f%6f%2e%64%65%5c%22%3e%69%6e%66%6f%40%6f%70%6f%6c%6f%6f%2e%64%65%3c%5c%2f%61%3e%27%29%3b'))</script>
 .
 </span>
 	<span>All rights reserved &copy; 2013 <a href="http://www.opoloo.com">Opoloo GbR</a> | <a href="http://www.opoloo.de/impressum">Imprint</a></span>
