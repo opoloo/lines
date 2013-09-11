@@ -62,7 +62,7 @@ h2 {
   font-family: 'Ubuntu Condensed', sans-serif;
   letter-spacing: 0.01em;
   font-weight: 100;
-  margin: 0px 0 10px 0;
+  margin: 0px 0 15px 0;
   padding: 0 0 0 0px;
   text-align: left;
   color: #544f4e;
@@ -72,6 +72,7 @@ h2 {
 h3 {
   font-family: 'Gentium Basic', serif;
   color: #544f4e;
+  margin:0 0 5px 0;
 }
 
 
@@ -83,7 +84,7 @@ h3 {
 
 .two-cols {
   float: left;
-  max-width: 440px;
+  width: 440px;
   margin: 0 40px 0 0; }
 
 .two-cols:last-child {
@@ -107,6 +108,17 @@ div.three-cols:last-child {
 .wrapper {
   max-width: 960px;
   margin: 0px auto; }
+  
+  
+tt {
+  padding:10px;
+  background-color:#e7e5e5;
+}
+
+.float-left {
+  float:left;
+  margin:0 20px 0 0;
+}
 
 /*-----------------------------------------------------------*/
 /*-----------------------------------------------------------*/
@@ -226,7 +238,13 @@ div#content #devices {
   text-align: center;
 }
 
+#installation .two-cols {
+  margin:0 0 30px 0;
+}
 
+.table {
+  display:table-cell;
+}
 
 
 /*-----------------------------------------------------------*/
@@ -238,8 +256,9 @@ div#content #devices {
 
 #footer {
   max-width: 100%;
-  padding: 110px 0px;
-  font-family: 'Ubuntu Condensed', sans-serif; }
+  padding: 40px 0px 80px 0;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  line-height:1em;}
 
 
 #copyright {
@@ -288,25 +307,15 @@ a.nostyle {
 /*-----------------------------------------------------------*/
 
 
+
+
 .center {
   text-align: center;
 }
 
 
-div.download_button {
-  float:right;
-  text-transform:uppercase;
-}
-
-div.download_button a {
-  background-color:#872121;
-  padding:7px 15px;
-  color:#fff;
-}
-
-div.download_button a span {
-  color:#e1bdbd;
-  text-transform: none;
+.nomargin {
+  margin:0px;
 }
 
 hr {
@@ -320,14 +329,7 @@ hr {
   clear:both;
 }
 
-.show_mobile {
-  display: none; }
 
-.download-mobile a {
-  display: none; }
-
-#icons-mobile {
-  display: none; }
 
 .clearfix {
   float: none;

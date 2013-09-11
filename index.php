@@ -48,10 +48,10 @@ $(document).ready(function(){
 		<nav>
 			<ul>
 				<li id="logo"><a href=""><a href="/"><img src="images/logo.png" alt="Logo LINES" /></a></li>
-				<li><a href="">Features</a></li>
-				<li><a href="">Documentation</a></li>
-				<li><a href="">Installation</a></li>
-				<li><a href="">Contribute</a></li>
+				<li><a href="#features">Features</a></li>
+				<li><a href="#docu">Documentation</a></li>
+				<li><a href="#installation">Installation</a></li>
+				<li><a href="#contribute">Contribute</a></li>
 				<li><a href="https://github.com/you"><img style="position: fixed; top: 0; right: 0; border: 0;z-index:9999;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub"></a></li>
 			</ul>
 		<div class="clearfix"></div>
@@ -88,7 +88,7 @@ $(document).ready(function(){
 				<h3>Create & Edit</h3>
 				<p>A slim, beautifully designed editor to get your ideas out. </p>
 			</div>
-			<div class="three-cols">
+			<div class="three-cols nomargin">
 				<img src="images/screenshot_publish.jpg" alt="Publish" />
 				<h3>Publish</h3>
 				<p>Your text, code examples, images and links up front.</p>
@@ -124,12 +124,26 @@ $(document).ready(function(){
 		</div>
 		<hr/>
 		<div id="installation">
-			<h2>Installation</h2>
+			<h2>Installation</h2>			
 			<div class="two-cols">
 				<p>1. Clone Repo</p>
 			</div>
 			<div class="two-cols">
-			
+				<tt>git clone git@github.com:opoloo/lines.git</tt>
+			</div>
+			<div class="clearfix"></div>
+			<div class="two-cols">
+				<p>2. Switch into the lines directory</p>
+			</div>
+			<div class="two-cols">
+				<tt>cd lines</tt>
+			</div>
+			<div class="clearfix"></div>
+			<div class="two-cols nomargin">
+				<p>3. Run installation script</p>
+			</div>
+			<div class="two-cols nomargin">
+				<tt>bundle exec rake lines:setup</tt>
 			</div>
 			<div class="clearfix"></div>
 		</div>
@@ -146,11 +160,29 @@ $(document).ready(function(){
 			<div class="clearfix"></div>
 		</div>
 		<hr/>
+		<div id="contribute">
+				<h2>Contribute</h2>
+				<p>Lines is an open source project for a reason. It needs people, work, and time to mature. You can help make this project even greater by giving us feedback, telling us about your concerns, and voicing questions. Contact our developers:</p><br/>
+			<div class="two-cols table">
+				<img src="images/jochen.png" alt="Jochen Greif" class="float-left" />
+				<h3>Jochen Greif</h3>
+				<script type="text/javascript">eval(decodeURIComponent('%64%6f%63%75%6d%65%6e%74%2e%77%72%69%74%65%28%27%3c%61%20%68%72%65%66%3d%5c%22%6d%61%69%6c%74%6f%3a%6a%6f%63%68%65%6e%40%6f%70%6f%6c%6f%6f%2e%64%65%5c%22%3e%6a%6f%63%68%65%6e%40%6f%70%6f%6c%6f%6f%2e%64%65%3c%5c%2f%61%3e%27%29%3b'))</script>
+			</div>
+			<div class="two-cols table">
+				<img src="images/jochen.png" alt="Max Boll" class="float-left" />
+				<h3>Max Boll</h3>
+				<script type="text/javascript">eval(decodeURIComponent('%64%6f%63%75%6d%65%6e%74%2e%77%72%69%74%65%28%27%3c%61%20%68%72%65%66%3d%5c%22%6d%61%69%6c%74%6f%3a%6d%61%78%40%6f%70%6f%6c%6f%6f%2e%64%65%5c%22%3e%6d%61%78%40%6f%70%6f%6c%6f%6f%2e%64%65%3c%5c%2f%61%3e%27%29%3b'))</script>
+
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<hr/>
 	</div>
 </div>
 <div id="footer">
   <div id="copyright">
-	<span class="about">LINES is a project by opoloo. Find us on Google Plus & Twitter or write us an email to info@opoloo.de
+	<span class="about">LINES is a project by opoloo. Find us on <a href="">Google Plus</a> & <a href="">Twitter</a> or write us an email to <script type="text/javascript">eval(decodeURIComponent('%64%6f%63%75%6d%65%6e%74%2e%77%72%69%74%65%28%27%3c%61%20%68%72%65%66%3d%5c%22%6d%61%69%6c%74%6f%3a%69%6e%66%6f%40%6f%70%6f%6c%6f%6f%2e%64%65%5c%22%3e%69%6e%66%6f%40%6f%70%6f%6c%6f%6f%2e%64%65%3c%5c%2f%61%3e%27%29%3b'))</script>
+.
 </span>
 	<span>All rights reserved &copy; 2013 <a href="http://www.opoloo.com">Opoloo GbR</a> | <a href="http://www.opoloo.de/impressum">Imprint</a></span>
 	<span class="signet"><a href="http://www.opoloo.com/"></a></span>
