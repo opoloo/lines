@@ -268,6 +268,10 @@ div#content #devices {
   margin:0 0 30px 0;
 }
 
+#installation p {
+  text-transform: uppercase;
+}
+
 #installation:after {
   content: "";
   display: block;
@@ -281,7 +285,7 @@ div#content #devices {
 .white_box {
   background-color:#fff;
   padding:30px;
-  width:720px;
+  max-width:720px;
   font-size:0.9em;
   border-bottom: 2px solid #e6e6e6;
   margin:0px auto;
