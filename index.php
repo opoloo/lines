@@ -130,21 +130,18 @@
 					<div class="two-cols">
 						<tt>git clone git@github.com:opoloo/lines.git</tt>
 					</div>
-					<div class="clearfix"></div>
 					<div class="two-cols">
 						<p>2. Switch into the lines directory</p>
 					</div>
 					<div class="two-cols">
 						<tt>cd lines</tt>
 					</div>
-					<div class="clearfix"></div>
 					<div class="two-cols nomargin">
 						<p>3. Run installation script</p>
 					</div>
 					<div class="two-cols nomargin">
 						<tt>bundle exec rake lines:setup</tt>
 					</div>
-					<div class="clearfix"></div>
 				</div>
 				<hr/>
 				<div id="docu">
