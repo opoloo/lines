@@ -64,17 +64,17 @@
 				<div id="desc">
 					<h2>Enjoy simple, responsive, customizable publishing</h2>
 					<div class="three-cols">
-						<a href="images/popup_01.png"><img src="images/header_01.png" alt="Manage" /></a>
+						<a href="images/popup_01.png" title="1. Manage"><img src="images/header_01.png" alt="Manage" /></a>
 						<h3>1. Manage</h3>
 						<p>Manage your posts in clear, consistent frontend.</p>	
 					</div>
 					<div class="three-cols">
-						<img src="images/header_02.png" alt="Create &amp; Edit" />
+						<a href="images/popup_02.png" title="2. Create &amp; Edit"><img src="images/header_02.png" alt="Create &amp; Edit" /></a>
 						<h3>2. Create &amp; Edit</h3>
 						<p>Splash around in your ideas in a slim, beautifully designed editor.</p>
 					</div>
 					<div class="three-cols nomargin">
-						<img src="images/header_03.png" alt="Publish" />
+						<a href="images/popup_03.png" title="3. Publish"><img src="images/header_03.png" alt="Publish" /></a>
 						<h3>3. Publish</h3>
 						<p>See your text, code examples, images, and links shine.</p>
 					</div>
