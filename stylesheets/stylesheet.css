@@ -51,30 +51,32 @@ a:hover {
   color: #3d3d3d; }
 
 h1 {
-  font-weight: 700;
+  font-weight: 500;
   font-size: 2.600em;
   line-height: 1.1em;
   margin: 0;
   padding: 0 0 0px 0;
-  color:#872121;
+  color:#aa1b1b;
   display: block;
-  letter-spacing: 0em;
+  letter-spacing: -0.03em;
   font-family: 'Ubuntu Condensed', sans-serif;
 }
 
+h1 span {
+  color: #282424;  
+}
 
 h2 {
   font-size: 1.722em;
   line-height: 1em;
   font-family: 'Ubuntu Condensed', sans-serif;
-  letter-spacing: 0.01em;
+  letter-spacing: -0.02em;
   font-weight: 100;
   margin: 0px 0 15px 0;
   padding: 0 0 0 0px;
   text-align: left;
-  color: #544f4e;
+  color: #333;
   }
-
 
 h3 {
   font-family: 'Gentium Basic', serif;
@@ -82,7 +84,6 @@ h3 {
   margin:0 0 5px 0;
   font-size:1em;
 }
-
 
 .one-col {
   max-width: 650px;
@@ -135,7 +136,7 @@ tt {
 
 
 #head {
-  padding:50px 80px 100px 80px;
+  padding:20px 80px 80px 80px;
 }
 
 header {
@@ -166,6 +167,7 @@ header h2 {
   top:0px;
   display:block;
   width:100%;
+  z-index: 20;
 }
 
 
@@ -195,6 +197,16 @@ header h2 {
   border-bottom: none;
 }
 
+#meta nav ul li.linesaction a {
+  margin:0 0 0 100px;
+  text-transform: none;
+  color:#872121;
+}
+
+#meta nav ul li.linesaction a:hover {
+  color:#333;
+}
+
 #meta nav ul li a:hover, #meta nav ul li a.active {
   color:#872121;
 }
@@ -215,6 +227,10 @@ header h2 {
 #desc img {
   margin:10px 0px;
   border:1px solid #e6e6e6;
+}
+
+#desc a {
+  border-bottom: 0;
 }
 
 
@@ -246,37 +262,152 @@ div#content ul li {
 div#content #devices {
   margin:40px 0 0 0;
   max-width:960px;
+  height: 500px;
   text-align: center;
+  position: relative;
+}
+
+div#content #devices img {
+  display: none;
+}
+
+div#content #devices div {
+  position: absolute;
+}
+
+div#content #devices div.desktop {
+  background: transparent url('../images/desktop.png') no-repeat scroll 0 0;
+  width: 649px;
+  height: 478px;
+  left: 260px;
+  top: 0;
+  z-index: 1;
+}
+
+div#content #devices div.desktop iframe {
+  transform:scale(0.42);
+  -o-transform:scale(0.42);
+  -ms-transform:scale(0.42);
+  -moz-transform:scale(0.42);
+  -webkit-transform:scale(0.42);
+  border:0;
+  height:745px;
+  left:-396px;
+  position:absolute;
+  top:-192px;
+  width:1440px;
+}
+
+div#content #devices div.tablet {
+  background: transparent url('../images/tablet.png') no-repeat scroll 0 0;
+  width: 247px;
+  height: 414px;
+  top: 65px;
+  left: 0;
+  z-index: 2;
+}
+
+div#content #devices div.tablet iframe {
+  transform:scale(0.313);
+  -o-transform:scale(0.313);
+  -ms-transform:scale(0.313);
+  -moz-transform:scale(0.313);
+  -webkit-transform:scale(0.313);
+  border:0;
+  height:1027px;
+  left:-171px;
+  position:absolute;
+  top:-313px;
+  width:600px;
+}
+
+div#content #devices div.phone_landscape {
+  background: transparent url('../images/phone_landscape.png') no-repeat scroll 0 0;
+  height: 175px;
+  width: 337px;
+  top: 325px;
+  left: 85px;
+  z-index: 3;
+}
+
+div#content #devices div.phone_landscape iframe {
+  transform:scale(0.42);
+  -o-transform:scale(0.42);
+  -ms-transform:scale(0.42);
+  -moz-transform:scale(0.42);
+  -webkit-transform:scale(0.42);
+  border:0;
+  height:332px;
+  left:-130px;
+  position:absolute;
+  top:-84px;
+  width:600px;
+}
+
+div#content #devices div.phone_portrait {
+  background: transparent url('../images/phone_portrait.png') no-repeat scroll 0 0;
+  width: 180px;
+  height: 330px;
+  bottom: 0px;
+  right: 0px;
+  z-index: 3;
+}
+
+div#content #devices div.phone_portrait iframe {
+  transform:scale(0.29);
+  -o-transform:scale(0.29);
+  -ms-transform:scale(0.29);
+  -moz-transform:scale(0.29);
+  -webkit-transform:scale(0.29);
+  border:0;
+  height:857px;
+  left:-150px;
+  position:absolute;
+  top:-266px;
+  width:480px;
 }
 
 #installation .two-cols {
   margin:0 0 30px 0;
 }
 
+#installation p {
+  text-transform: uppercase;
+}
+
+#installation:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
 .table {
   display:table-cell;
 }
 
-
 .white_box {
   background-color:#fff;
   padding:30px;
-  width:650px;
+  max-width:720px;
   font-size:0.9em;
   border-bottom: 2px solid #e6e6e6;
   margin:0px auto;
 }
 
 .white_box .two-cols {
-  width:300px;
+  width:360px;
 }
 
-.white_box .two-cols:odd {
-  width:280px;
+.white_box .two-cols:nth-child(even) {
+  width:340px;
 }
 
-.white_box .two-cols:even {
-  width:320px;
+.white_box .two-cols:nth-child(odd) {
+  width:380px;
+}
+
+#features .two-cols {
+  width:330px;
 }
 
 /*-----------------------------------------------------------*/
@@ -285,10 +416,38 @@ div#content #devices {
 /*-----------------------------------------------------------*/
 /*-----------------------------------------------------------*/
 
+#download {
+  margin-top: 50px;
+}
+
+#download a {
+  display: block;
+  background: #aa1b1b;
+  padding: 20px 40px;
+  color: #fff;
+  font-size: 36px;
+  border-radius: 3px;
+  margin: 0 auto;
+  text-transform: uppercase;
+  width: 640px;
+  text-align: center;
+}
+
+#download a:hover {
+  background: #881b1b;
+}
+
+#contribute h2, #contribute p {
+  text-align: center;
+}
+
+#contribute .one-col {
+  margin: 0 auto;
+}
 
 #footer {
-  padding:40px 0 0 0;
-  margin:40px 0 0 0;
+  padding:50px 0 0 0;
+  margin:50px 0 0 0;
   max-width: 100%;
   background:url('../images/footer.png') 50% 0 no-repeat #f8f8f8 fixed;
   border-top:3px solid #e2e2e2;
@@ -345,8 +504,13 @@ a.nostyle {
 /*-----------------------------------------------------------*/
 /*-----------------------------------------------------------*/
 
+.red {
+  color:#872121;  
+}
 
-
+.green {
+  color:#218721;
+}
 
 .center {
   text-align: center;

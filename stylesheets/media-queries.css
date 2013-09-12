@@ -4,14 +4,50 @@ smaller than 960px
 @media screen and (max-width: 960px) {
   .show_mobile {  display: block;  }
   .hide_mobile {  display: none;  }
-
+  header {padding:30px 0 0 0;  }
   .wrapper {  width: 92%;  padding: 0% 4% 0 4%;  }
   img {  max-width: 100%; height: auto; width: auto\9; /* ie8 */}
-  
+  h1 {font-size:2.3em;}
+  h2 {font-size: 1.5em;}
   #meta {position: relative;}
   #meta nav ul li {display:none;}
   #meta nav ul li:first-child, #meta nav ul li:last-child {display:inline-block;}
+  div.two-cols, div.three-cols {
+    float: none;
+    display: inline-block;
+    width: 32%;
+    margin: 0;
+    padding-right: 30px;
+    box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    vertical-align: top;
+  }
+
+  div.three-cols .nomargin {
+    padding: 0;
+    margin: 0;
+  }
   
+  #installation .two-cols {margin:0px 0 10px 0;}
+  .white_box {max-width:100%;}
+  .white_box .two-cols {max-width:100%;}
+  .white_box h2 {margin:0 0 5px 0;}
+  #head { padding:0px 30px 40px 30px; }
+
+  div#content #devices {
+    height: auto;
+  }
+
+  div#content #devices img {
+    display: block;
+  }
+
+  div#content #devices div {
+    display: none;
+  }
 }
 
 
@@ -19,14 +55,35 @@ smaller than 960px
 smaller than 600px
 *************************************************************************************/
 @media screen and (max-width: 600px) {
-    .two-cols {max-width:100%;}
+    body {font-size:0.9em;}
+    div.two-cols, div.three-cols {
+      float:none;
+      width:100%;
+      margin:15px 0 0 0;
+      display:block;
+      max-width: 100%;
+      text-align: center;
+    }
+    header {padding:10px 0 0 0;  }
+    h2 {font-size: 1.2em;}
+    .white_box {padding:15px;font-size:1.1em}
+    .white_box .two-cols, #features .two-cols { width:100%;float:none;  }
+    
+    div#content ul {margin:0;}
+    div#content ul li {margin:0 0 5px 0;}
+    
+    h1 {font-size:1.7em;}
+    h2 {margin:30px 0 5px 0;}
+    hr {margin:20px 0px;}
+    h2.margin-mobile {margin:20px 0 5px 0;}
+    tt {padding:5px;}
 }
 
 /************************************************************************************
 smaller than 480px
 *************************************************************************************/
 @media screen and (max-width: 480px) {
- 
+    h1 {font-size:1.5em;}
  
  
  }
