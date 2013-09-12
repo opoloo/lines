@@ -52,13 +52,15 @@ a:hover {
 
 h1 {
   font-weight: 700;
-  font-size: 2.200em;
-  line-height: 1em;
-  margin: 15px 0 15px 0;
+  font-size: 2.600em;
+  line-height: 1.1em;
+  margin: 0;
   padding: 0 0 0px 0;
-  color: #544f4e;
+  color:#872121;
   display: block;
-  letter-spacing: 0em;}
+  letter-spacing: 0em;
+  font-family: 'Ubuntu Condensed', sans-serif;
+}
 
 
 h2 {
@@ -78,13 +80,13 @@ h3 {
   font-family: 'Gentium Basic', serif;
   color: #544f4e;
   margin:0 0 5px 0;
+  font-size:1em;
 }
 
 
 .one-col {
   max-width: 650px;
   text-align: left;
-  margin:0px auto;
 }
 
 .two-cols {
@@ -141,16 +143,11 @@ header {
   text-align: center;
   font-size:1.111em;
   /*background:url('../images/header_dummy.png') 50% 0 no-repeat #872121 fixed;*/
-  background:url('../images/header.png') 50% 0 no-repeat #f8f8f8 fixed;
-  background-position: fixed;
   /*color:#e1bdbd;*/
+  background-color:#fff;
   color:#423d3d;
   margin: 0 auto;
   border-bottom:3px solid #e2e2e2;
-}
-
-header h1, header h2, header h3  {
-  color:#333;
 }
 
 header h2 {
@@ -174,7 +171,7 @@ header h2 {
 
 #meta nav {
   text-transform: uppercase;
-  font-size: 0.850em;
+  font-size: 0.80em;
   font-weight: 400;
   float:left;
   font-family: 'Ubuntu', sans-serif; 
@@ -183,10 +180,10 @@ header h2 {
 
 #meta nav ul li {
   float: left;
-  margin: 0 0 0 50px; }
+  margin: 0 0 0 40px; }
   
 #meta nav ul li#logo {
-  margin:7px 0 0 0px;
+  margin:4px 0 0 0px;
 }
 
 #meta nav ul li#logo a {
@@ -194,17 +191,17 @@ header h2 {
 }
   
 #meta nav ul li a {
-  color:#872121;
+  color:#333;
   border-bottom: none;
 }
 
 #meta nav ul li a:hover, #meta nav ul li a.active {
-  color:#333;
+  color:#872121;
 }
 
 
 #teaser {
-  font-family: 'Ubuntu', sans-serif; 
+  font-family: 'Ubuntu Condensed', sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   font-size: 0.8em;
@@ -212,11 +209,12 @@ header h2 {
 
 #desc {
   text-align: left;
-  padding:0 0 0px 0;
+  padding:0 0 70px 0;
 }
 
 #desc img {
   margin:10px 0px;
+  border:1px solid #e6e6e6;
 }
 
 
@@ -227,7 +225,7 @@ header h2 {
 /*-----------------------------------------------------------*/
 
 div#content {
-  padding:80px 0 0 0;
+  padding:80px 0 0px 0;
   display:block;
 }
 
@@ -237,11 +235,11 @@ div#content a {
 }
 
 div#content ul {
-  margin:10px 0 0 0;  
+  margin:20px 0 0 0;  
 }
 
 div#content ul li {
-  margin:10px 0 0 0;  
+  margin:14px 0 0 0;  
   color:#666;
 }
 
@@ -262,11 +260,11 @@ div#content #devices {
 
 .white_box {
   background-color:#fff;
-  padding:30px 20px;
+  padding:30px 50px;
 }
 
 .white_box .two-cols {
-  max-width:440px;
+  width:400px;
 }
 
 /*-----------------------------------------------------------*/
@@ -277,10 +275,12 @@ div#content #devices {
 
 
 #footer {
+  padding:40px 0 0 0;
+  margin:40px 0 0 0;
   max-width: 100%;
-  padding: 40px 0px 80px 0;
-  font-family: 'Ubuntu Condensed', sans-serif;
-  line-height:1em;}
+  background:url('../images/footer.png') 50% 0 no-repeat #f8f8f8 fixed;
+  border-top:3px solid #e2e2e2;
+}
 
 
 #copyright {
@@ -288,7 +288,10 @@ div#content #devices {
   text-align: center;
   max-width: 960px;
   color: #999;
-  letter-spacing: 0.03em; }
+  letter-spacing: 0.03em;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  line-height:1em;
+  padding: 80px 0px 80px 0;}
 
 #copyright a {
   border-bottom: none;
@@ -351,6 +354,13 @@ hr {
   clear:both;
 }
 
+header hr {
+  margin:10px 0px;
+  height:2px;
+  width:100px;
+  margin:0px auto;
+  display:inline-block
+}
 
 
 .clearfix {
