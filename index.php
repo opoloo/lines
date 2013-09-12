@@ -16,14 +16,14 @@
 		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 		<link rel="icon" href="favicon.png" type="image/png" />
 
-		<!-- General Stylesheet -->
+		<!-- Stylesheets -->
 		<link href="stylesheets/stylesheet.css" rel="stylesheet" type="text/css" />
-
-		<!-- Responsive -->
 		<link href="stylesheets/media-queries.css" rel="stylesheet" type="text/css" />
+		<link href="stylesheets/magnific-popup.css" rel="stylesheet" type="text/css" />
 
 		<!-- Scripts -->
 		<script type="text/javascript" src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+		<script type="text/javascript" src="scripts/jquery.magnific-popup.min.js"></script>
 		<script type="text/javascript" src="scripts/application.js"></script>
 		<script type="text/javascript" src="scripts/jquery.parallax-1.1.3.js"></script>
 	</head>
@@ -64,13 +64,13 @@
 				<div id="desc">
 					<h2>Enjoy simple, responsive, customizable publishing</h2>
 					<div class="three-cols">
-						<img src="images/header_01.png" alt="Manage" />
+						<a href="images/popup_01.png"><img src="images/header_01.png" alt="Manage" /></a>
 						<h3>1. Manage</h3>
 						<p>Manage your posts in clear, consistent frontend.</p>	
 					</div>
 					<div class="three-cols">
-						<img src="images/header_02.png" alt="Create & Edit" />
-						<h3>2. Create & Edit</h3>
+						<img src="images/header_02.png" alt="Create &amp; Edit" />
+						<h3>2. Create &amp; Edit</h3>
 						<p>Splash around in your ideas in a slim, beautifully designed editor.</p>
 					</div>
 					<div class="three-cols nomargin">
