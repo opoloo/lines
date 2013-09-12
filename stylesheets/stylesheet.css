@@ -306,11 +306,6 @@ div#content #devices {
   width:330px;
 }
 
-#features ul li span {
-  display: inline-block;
-  height: 100%;
-}
-
 /*-----------------------------------------------------------*/
 /*-----------------------------------------------------------*/
 /*-----------------------  4. FOOTER  -----------------------*/
@@ -319,8 +314,8 @@ div#content #devices {
 
 
 #footer {
-  padding:40px 0 0 0;
-  margin:40px 0 0 0;
+  padding:50px 0 0 0;
+  margin:50px 0 0 0;
   max-width: 100%;
   background:url('../images/footer.png') 50% 0 no-repeat #f8f8f8 fixed;
   border-top:3px solid #e2e2e2;

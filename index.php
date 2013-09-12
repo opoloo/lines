@@ -65,8 +65,8 @@
 					<h2>Enjoy simple, responsive, customizable publishing</h2>
 					<div class="three-cols">
 						<a href="images/popup_01.png" title="1. Manage"><img src="images/header_01.png" alt="Manage" /></a>
-						<h3>1. Manage</h3>
-						<p>Manage your posts in clear, consistent frontend.</p>	
+						<h3>1. Overview</h3>
+						<p>Manage your posts in a clear, consistent frontend.</p>	
 					</div>
 					<div class="three-cols">
 						<a href="images/popup_02.png" title="2. Create &amp; Edit"><img src="images/header_02.png" alt="Create &amp; Edit" /></a>
@@ -111,10 +111,10 @@
 					<h2>Optimized for reading</h2>
 					<p>The best writing in the world amounts to nothing if you can't read it how you want it, where you want it. LINES is optimized for a clean reading experience that scales perfectly to big and small screens.</p>
 					<ul>
-						<li>| clear & comprehensive overview of your posts</li>
-						<li>| header graphics for visual identification</li>
-						<li>| headlines optimized for scanning</li>
-						<li>| focus on links, images & code</li>
+						<li>&#10003; clear &amp; comprehensive overview of your posts</li>
+						<li>&#10003; header graphics for visual identification</li>
+						<li>&#10003; headlines optimized for scanning</li>
+						<li>&#10003; focus on links, images &amp; code</li>
 					</ul>
 					
 				</div>
@@ -147,7 +147,8 @@
 				<div id="docu">
 					<div class="two-cols">
 						<h2>Documentation</h2>
-						<p>We stuck closely to the code conventions, so you'll have no trouble modifying it to your needs. The complete documentation is on GitHub. Have a look at the <a href="https://github.com/opoloo/lines/blob/master/README.rdoc">readme</a>.</p>
+						<p>We stuck closely to the code conventions, so you'll have no trouble modifying it to your needs.<br />
+							The complete documentation is on GitHub. Have a look at the <a href="https://github.com/opoloo/lines/blob/master/README.rdoc">readme</a>.</p>
 					</div>
 					<div class="two-cols">
 						<h2>Customizable</h2>
@@ -165,18 +166,17 @@
 					<div class="two-cols table">
 						<img src="images/jochen.png" alt="Jochen Greif" class="float-left" />
 						<h3>Jochen Greif</h3>
-						<script type="text/javascript">eval(decodeURIComponent('%64%6f%63%75%6d%65%6e%74%2e%77%72%69%74%65%28%27%3c%61%20%68%72%65%66%3d%5c%22%6d%61%69%6c%74%6f%3a%6a%6f%63%68%65%6e%40%6f%70%6f%6c%6f%6f%2e%64%65%5c%22%3e%6a%6f%63%68%65%6e%40%6f%70%6f%6c%6f%6f%2e%64%65%3c%5c%2f%61%3e%27%29%3b'))</script>
+						<script type="text/javascript">eval(decodeURIComponent('%64%6f%63%75%6d%65%6e%74%2e%77%72%69%74%65%28%27%3c%61%20%68%72%65%66%3d%5c%22%6d%61%69%6c%74%6f%3a%6a%6f%63%68%65%6e%40%6f%70%6f%6c%6f%6f%2e%63%6f%6d%5c%22%3e%6a%6f%63%68%65%6e%40%6f%70%6f%6c%6f%6f%2e%63%6f%6d%3c%5c%2f%61%3e%27%29%3b'))</script>
 					</div>
 					<div class="two-cols table">
 						<img src="images/max.png" alt="Max Boll" class="float-left" />
 						<h3>Max Boll</h3>
-						<script type="text/javascript">eval(decodeURIComponent('%64%6f%63%75%6d%65%6e%74%2e%77%72%69%74%65%28%27%3c%61%20%68%72%65%66%3d%5c%22%6d%61%69%6c%74%6f%3a%6d%61%78%40%6f%70%6f%6c%6f%6f%2e%64%65%5c%22%3e%6d%61%78%40%6f%70%6f%6c%6f%6f%2e%64%65%3c%5c%2f%61%3e%27%29%3b'))</script>
-
+						<script type="text/javascript">eval(decodeURIComponent('%64%6f%63%75%6d%65%6e%74%2e%77%72%69%74%65%28%27%3c%61%20%68%72%65%66%3d%5c%22%6d%61%69%6c%74%6f%3a%6d%61%78%40%6f%70%6f%6c%6f%6f%2e%63%6f%6d%5c%22%3e%6d%61%78%40%6f%70%6f%6c%6f%6f%2e%63%6f%6d%3c%5c%2f%61%3e%27%29%3b'))</script>
 					</div>
 					<div class="clearfix"></div>
 				</div>		
 		  <div id="copyright">
-			<span class="about">LINES is a project by opoloo. Find us on <a href="https://plus.google.com/u/0/+Opoloo/posts">Google Plus</a> & <a href="https://twitter.com/Opoloo">Twitter</a> or write us an email to <script type="text/javascript">eval(decodeURIComponent('%64%6f%63%75%6d%65%6e%74%2e%77%72%69%74%65%28%27%3c%61%20%68%72%65%66%3d%5c%22%6d%61%69%6c%74%6f%3a%69%6e%66%6f%40%6f%70%6f%6c%6f%6f%2e%64%65%5c%22%3e%69%6e%66%6f%40%6f%70%6f%6c%6f%6f%2e%64%65%3c%5c%2f%61%3e%27%29%3b'))</script>
+			<span class="about">LINES is a project by opoloo. Find us on <a href="https://plus.google.com/u/0/+Opoloo/posts">Google Plus</a> &amp; <a href="https://twitter.com/Opoloo">Twitter</a> or write us an email to <script type="text/javascript">eval(decodeURIComponent('%64%6f%63%75%6d%65%6e%74%2e%77%72%69%74%65%28%27%3c%61%20%68%72%65%66%3d%5c%22%6d%61%69%6c%74%6f%3a%69%6e%66%6f%40%6f%70%6f%6c%6f%6f%2e%64%65%5c%22%3e%69%6e%66%6f%40%6f%70%6f%6c%6f%6f%2e%64%65%3c%5c%2f%61%3e%27%29%3b'))</script>
 		</span>
 			<span>All rights reserved &copy; 2013 <a href="http://www.opoloo.com">Opoloo GbR</a> | <a href="http://www.opoloo.de/impressum">Imprint</a></span>
 			<span class="signet"><a href="http://www.opoloo.com/"></a></span>
