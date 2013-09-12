@@ -96,7 +96,7 @@ Don't forget to adjust the full url to your sitemaps in <tt>public/robots.txt</t
 
 == Documentation
 
-The complete documentation can be found ad rdoc.info: http://rdoc.info/github/opoloo/lines/master/frames
+The complete documentation can be found at rdoc.info: http://rdoc.info/github/opoloo/lines/master/frames
 
 == Customization
 
