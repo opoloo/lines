@@ -267,6 +267,10 @@ div#content #devices {
   position: relative;
 }
 
+div#content #devices img {
+  display: none;
+}
+
 div#content #devices div {
   position: absolute;
 }

@@ -131,6 +131,7 @@
 					<div class="phone_portrait">
 						<iframe src="http://blog.opoloo.de"></iframe>
 					</div>
+					<img src="images/devices.png" alt="" />
 				</div>
 				<hr/>
 				<div id="installation" class="white_box">
