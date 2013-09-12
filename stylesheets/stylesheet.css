@@ -271,11 +271,11 @@ div#content #devices {
   width:300px;
 }
 
-.white_box .two-cols:nth-child(odd) {
+.white_box .two-cols:odd {
   width:280px;
 }
 
-.white_box .two-cols:nth-child(even) {
+.white_box .two-cols:even {
   width:320px;
 }
 
