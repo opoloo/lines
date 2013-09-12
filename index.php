@@ -160,7 +160,7 @@
 					<div class="two-cols">
 						<h2>Documentation</h2>
 						<p>We stuck closely to the code conventions, so you'll have no trouble modifying it to your needs.<br />
-							The complete documentation is on GitHub. Have a look at the <a href="https://github.com/opoloo/lines/blob/master/README.rdoc">readme</a>.</p>
+							The complete documentation is on GitHub. Have a look at the <a href="http://rdoc.info/github/opoloo/lines/master/frames">readme</a>.</p>
 					</div>
 					<div class="two-cols">
 						<h2>Customizable</h2>
@@ -178,15 +178,18 @@
 					<div class="two-cols table">
 						<img src="images/jochen.png" alt="Jochen Greif" class="float-left" />
 						<h3>Jochen Greif</h3>
-						<script type="text/javascript">eval(decodeURIComponent('%64%6f%63%75%6d%65%6e%74%2e%77%72%69%74%65%28%27%3c%61%20%68%72%65%66%3d%5c%22%6d%61%69%6c%74%6f%3a%6a%6f%63%68%65%6e%40%6f%70%6f%6c%6f%6f%2e%63%6f%6d%5c%22%3e%6a%6f%63%68%65%6e%40%6f%70%6f%6c%6f%6f%2e%63%6f%6d%3c%5c%2f%61%3e%27%29%3b'))</script>
+						<a href="https://plus.google.com/u/0/115419025821413033138/posts" target="_blank">Jochen @ Google+</a>
 					</div>
 					<div class="two-cols table">
 						<img src="images/max.png" alt="Max Boll" class="float-left" />
 						<h3>Max Boll</h3>
-						<script type="text/javascript">eval(decodeURIComponent('%64%6f%63%75%6d%65%6e%74%2e%77%72%69%74%65%28%27%3c%61%20%68%72%65%66%3d%5c%22%6d%61%69%6c%74%6f%3a%6d%61%78%40%6f%70%6f%6c%6f%6f%2e%63%6f%6d%5c%22%3e%6d%61%78%40%6f%70%6f%6c%6f%6f%2e%63%6f%6d%3c%5c%2f%61%3e%27%29%3b'))</script>
+						<a href="https://plus.google.com/u/0/108606517240910241531/posts" target="_blank">Max @ Google+</a>
 					</div>
 					<div class="clearfix"></div>
-				</div>		
+				</div>
+				<div id="download" class="wrapper">
+					<a href="https://github.com/opoloo/lines-blogoloo" target="_blank" class="btn-download">Fork me on GitHub</a>
+				</div>	
 		  <div id="copyright">
 			<span class="about">LINES is a project by opoloo. Find us on <a href="https://plus.google.com/u/0/+Opoloo/posts">Google Plus</a> &amp; <a href="https://twitter.com/Opoloo">Twitter</a> or write us an email to <script type="text/javascript">eval(decodeURIComponent('%64%6f%63%75%6d%65%6e%74%2e%77%72%69%74%65%28%27%3c%61%20%68%72%65%66%3d%5c%22%6d%61%69%6c%74%6f%3a%69%6e%66%6f%40%6f%70%6f%6c%6f%6f%2e%64%65%5c%22%3e%69%6e%66%6f%40%6f%70%6f%6c%6f%6f%2e%64%65%3c%5c%2f%61%3e%27%29%3b'))</script>
 		</span>

@@ -56,7 +56,7 @@ h1 {
   line-height: 1.1em;
   margin: 0;
   padding: 0 0 0px 0;
-  color:#872121;
+  color:#aa1b1b;
   display: block;
   letter-spacing: -0.03em;
   font-family: 'Ubuntu Condensed', sans-serif;
@@ -416,6 +416,34 @@ div#content #devices div.phone_portrait iframe {
 /*-----------------------------------------------------------*/
 /*-----------------------------------------------------------*/
 
+#download {
+  margin-top: 50px;
+}
+
+#download a {
+  display: block;
+  background: #aa1b1b;
+  padding: 20px 40px;
+  color: #fff;
+  font-size: 36px;
+  border-radius: 3px;
+  margin: 0 auto;
+  text-transform: uppercase;
+  width: 640px;
+  text-align: center;
+}
+
+#download a:hover {
+  background: #881b1b;
+}
+
+#contribute h2, #contribute p {
+  text-align: center;
+}
+
+#contribute .one-col {
+  margin: 0 auto;
+}
 
 #footer {
   padding:50px 0 0 0;
