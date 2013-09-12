@@ -286,12 +286,16 @@ div#content #devices {
   margin:0px auto;
 }
 
-#installation.white_box {
-  padding-right: 0;
-}
-
 .white_box .two-cols {
   width:360px;
+}
+
+.white_box .two-cols:nth-child(even) {
+  width:340px;
+}
+
+.white_box .two-cols:nth-child(odd) {
+  width:380px;
 }
 
 #features .two-cols {
