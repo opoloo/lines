@@ -89,10 +89,10 @@
 					<div class="two-cols">
 						<h2>What it is</h2>
 						<ul>
-							<li><span class="green">&#10003;</span> a blog framework for developers</li>
-							<li><span class="green">&#10003;</span> a simple consistent publishing tool</li>
-							<li><span class="green">&#10003;</span> a customizable platform, putting your content first</li>
-							<li><span class="green">&#10003;</span> an open source project, giving you all the freedom in the world</li>
+							<li>&#10003; a blog framework for developers</li>
+							<li>&#10003; a simple consistent publishing tool</li>
+							<li>&#10003; a customizable platform, putting your content first</li>
+							<li>&#10003; an open source project, giving you all the freedom in the world</li>
 						</ul>
 					</div>
 					<div class="two-cols nomargin">
