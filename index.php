@@ -55,7 +55,7 @@ $(document).ready(function(){
 				<li><a href="#installation">Installation</a></li>
 				<li><a href="#docu">Documentation</a></li>
 				<li><a href="#contribute">Contribute</a></li>
-				<li><a href="https://github.com/you"><img style="position: fixed; top: 0; right: 0; border: 0;z-index:999;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a></li>
+				<li><a href="https://github.com/opoloo/lines"><img style="position: fixed; top: 0; right: 0; border: 0;z-index:999;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a></li>
 			</ul>
 		<div class="clearfix"></div>
 	</div>

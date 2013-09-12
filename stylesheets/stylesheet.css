@@ -141,7 +141,7 @@ header {
   text-align: center;
   font-size:1.111em;
   /*background:url('../images/header_dummy.png') 50% 0 no-repeat #872121 fixed;*/
-  background:url('../images/header.png') 50% 0 no-repeat #ededee fixed;
+  background:url('../images/header.png') 50% 0 no-repeat #f8f8f8 fixed;
   background-position: fixed;
   /*color:#e1bdbd;*/
   color:#423d3d;
@@ -247,7 +247,7 @@ div#content ul li {
 
 div#content #devices {
   margin:40px 0 0 0;
-  width:960px;
+  max-width:960px;
   text-align: center;
 }
 
@@ -266,7 +266,7 @@ div#content #devices {
 }
 
 .white_box .two-cols {
-  width:440px;
+  max-width:440px;
 }
 
 /*-----------------------------------------------------------*/
