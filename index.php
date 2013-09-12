@@ -37,7 +37,13 @@ $(document).ready(function(){
 	$('#header').parallax("50%", 0.2);
 	$('#footer').parallax("50%", 0.4);
 
-
+	// Smooth Anchor Scrolling
+  $('a').click(function(){
+    $('html, body').animate({
+        scrollTop: $($(this).attr('href')).offset().top - 65
+    }, 500);
+    return false;
+  });
 })
 
 </script>
