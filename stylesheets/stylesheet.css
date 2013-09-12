@@ -260,11 +260,15 @@ div#content #devices {
 
 .white_box {
   background-color:#fff;
-  padding:30px 50px;
+  padding:30px;
+  width:650px;
+  font-size:0.9em;
+  border-bottom: 2px solid #e6e6e6;
+  margin:0px auto;
 }
 
 .white_box .two-cols {
-  width:400px;
+  width:300px;
 }
 
 /*-----------------------------------------------------------*/
@@ -291,11 +295,13 @@ div#content #devices {
   letter-spacing: 0.03em;
   font-family: 'Ubuntu Condensed', sans-serif;
   line-height:1em;
-  padding: 80px 0px 80px 0;}
+  padding: 80px 0px 80px 0;
+  font-size:0.8em;}
 
 #copyright a {
   border-bottom: none;
-  color: #666; }
+  color: #666;
+  }
 
 #copyright a:hover {
   color: #333; }

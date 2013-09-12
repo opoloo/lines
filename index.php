@@ -10,7 +10,7 @@
 <link href='http://fonts.googleapis.com/css?family=Ubuntu+Condensed|Ubuntu:400,300,500,700|Ubuntu+Mono' rel='stylesheet' type='text/css'>
 <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
 
-<title>Lines | Simple Publishing on Rails</title>
+<title>LINES | Simple Publishing on Rails</title>
 
 <!-- Embedding Favicon -->
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
@@ -56,7 +56,7 @@ $(document).ready(function(){
 				<li><a href="#installation">Installation</a></li>
 				<li><a href="#docu">Documentation</a></li>
 				<li><a href="#contribute">Contribute</a></li>
-				<li><a href="#contribute">LINES in action</a></li>
+				<li><a href="http://blog.opoloo.com/">LINES in action</a></li>
 				<li><a href="https://github.com/opoloo/lines"><img style="position: fixed; top: 0; right: 0; border: 0;z-index:999;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a></li>
 			</ul>
 		<div class="clearfix"></div>
@@ -106,19 +106,19 @@ $(document).ready(function(){
 			<div class="two-cols">
 				<h2>What it is</h2>
 				<ul>
-					<li>a blog framework for developers</li>
-					<li>a simple consistent publishing tool</li>
-					<li>a customizable platform, putting your content first</li>
-					<li>an open source project, giving you all the freedom in the world</li>
+					<li>&#10003; a blog framework for developers</li>
+					<li>&#10003; a simple consistent publishing tool</li>
+					<li>&#10003; a customizable platform, putting your content first</li>
+					<li>&#10003;an open source project, giving you all the freedom in the world</li>
 				</ul>
 			</div>
 			<div class="two-cols nomargin">
 				<h2>What it's not</h2>
 				<ul>
-					<li>Wordpress, Blogger, or Squarespace</li>
-					<li>a gem or a plugin</li>
-					<li>an overblown framework with theme craziness</li>
-					<li>an incoherent pile of options</li>
+					<li>&#10799; Wordpress, Blogger, or Squarespace</li>
+					<li>&#10799; a gem or a plugin</li>
+					<li>&#10799; an overblown framework with theme craziness</li>
+					<li>&#10799; an incoherent pile of options</li>
 				</ul>
 			</div>
 			<div class="clearfix"></div>
@@ -167,26 +167,28 @@ $(document).ready(function(){
 		<div id="docu">
 			<div class="two-cols">
 				<h2>Documentation</h2>
-				<p>We stuck closely to the code conventions, so you'll have no trouble modifying it to your needs. The complete documentation is on GitHub. Have a look at the <a href="#">readme</a>.</p>
+				<p>We stuck closely to the code conventions, so you'll have no trouble modifying it to your needs. The complete documentation is on GitHub. Have a look at the <a href="https://github.com/opoloo/lines/blob/master/README.rdoc">readme</a>.</p>
 			</div>
 			<div class="two-cols">
 				<h2>Customizable</h2>
-				<p>LINES is based on Rails 3.2 (4.0 to come soon) and can be customized to your personal needs and preferences. We'll constantly maintain the blog platform and keep it up-to-date it on <a href="#">GitHub</a>.</p>
+				<p>LINES is based on Rails 3.2 (4.0 to come soon) and can be customized to your personal needs and preferences. We'll constantly maintain the blog platform and keep it up-to-date it on <a href="https://github.com/opoloo/lines">GitHub</a>.</p>
 			</div>
 			<div class="clearfix"></div>
 		</div>
 	</div>
 <div id="footer">
 		<div id="contribute" class="wrapper">
+			<div class="one-col">
 				<h2>Contribute</h2>
 				<p>LINES is an open source project for a reason. It needs people, work, and time to mature. You can help make this project even greater by giving us feedback, telling us about your concerns, and voicing questions. Contact our developers:</p><br/>
+				</div>
 			<div class="two-cols table">
 				<img src="images/jochen.png" alt="Jochen Greif" class="float-left" />
 				<h3>Jochen Greif</h3>
 				<script type="text/javascript">eval(decodeURIComponent('%64%6f%63%75%6d%65%6e%74%2e%77%72%69%74%65%28%27%3c%61%20%68%72%65%66%3d%5c%22%6d%61%69%6c%74%6f%3a%6a%6f%63%68%65%6e%40%6f%70%6f%6c%6f%6f%2e%64%65%5c%22%3e%6a%6f%63%68%65%6e%40%6f%70%6f%6c%6f%6f%2e%64%65%3c%5c%2f%61%3e%27%29%3b'))</script>
 			</div>
 			<div class="two-cols table">
-				<img src="images/jochen.png" alt="Max Boll" class="float-left" />
+				<img src="images/max.png" alt="Max Boll" class="float-left" />
 				<h3>Max Boll</h3>
 				<script type="text/javascript">eval(decodeURIComponent('%64%6f%63%75%6d%65%6e%74%2e%77%72%69%74%65%28%27%3c%61%20%68%72%65%66%3d%5c%22%6d%61%69%6c%74%6f%3a%6d%61%78%40%6f%70%6f%6c%6f%6f%2e%64%65%5c%22%3e%6d%61%78%40%6f%70%6f%6c%6f%6f%2e%64%65%3c%5c%2f%61%3e%27%29%3b'))</script>
 
