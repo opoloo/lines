@@ -1,0 +1,32 @@
+/************************************************************************************
+smaller than 960px
+*************************************************************************************/
+@media screen and (max-width: 960px) {
+  .show_mobile {  display: block;  }
+  .hide_mobile {  display: none;  }
+
+  .wrapper {  width: 92%;  padding: 0% 4% 0 4%;  }
+  img {  max-width: 100%; height: auto; width: auto\9; /* ie8 */}
+  
+  #meta {position: relative;}
+  #meta nav ul li {display:none;}
+  #meta nav ul li:first-child, #meta nav ul li:last-child {display:inline-block;}
+  
+}
+
+
+/************************************************************************************
+smaller than 600px
+*************************************************************************************/
+@media screen and (max-width: 600px) {
+    .two-cols {max-width:100%;}
+}
+
+/************************************************************************************
+smaller than 480px
+*************************************************************************************/
+@media screen and (max-width: 480px) {
+ 
+ 
+ 
+ }
