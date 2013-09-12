@@ -119,7 +119,18 @@
 					
 				</div>
 				<div id="devices">
-					<img src="images/devices.png" alt="Devices" />
+					<div class="desktop">
+						<iframe src="http://blog.opoloo.de"></iframe>
+					</div>
+					<div class="tablet">
+						<iframe src="http://blog.opoloo.de"></iframe>
+					</div>
+					<div class="phone_landscape">
+						<iframe src="http://blog.opoloo.de"></iframe>
+					</div>
+					<div class="phone_portrait">
+						<iframe src="http://blog.opoloo.de"></iframe>
+					</div>
 				</div>
 				<hr/>
 				<div id="installation" class="white_box">

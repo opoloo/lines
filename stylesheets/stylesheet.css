@@ -167,6 +167,7 @@ header h2 {
   top:0px;
   display:block;
   width:100%;
+  z-index: 20;
 }
 
 
@@ -261,7 +262,105 @@ div#content ul li {
 div#content #devices {
   margin:40px 0 0 0;
   max-width:960px;
+  height: 500px;
   text-align: center;
+  position: relative;
+}
+
+div#content #devices div {
+  position: absolute;
+}
+
+div#content #devices div.desktop {
+  background: transparent url('../images/desktop.png') no-repeat scroll 0 0;
+  width: 649px;
+  height: 478px;
+  left: 260px;
+  top: 0;
+  z-index: 1;
+}
+
+div#content #devices div.desktop iframe {
+  transform:scale(0.42);
+  -o-transform:scale(0.42);
+  -ms-transform:scale(0.42);
+  -moz-transform:scale(0.42);
+  -webkit-transform:scale(0.42);
+  border:0;
+  height:745px;
+  left:-396px;
+  position:absolute;
+  top:-192px;
+  width:1440px;
+}
+
+div#content #devices div.tablet {
+  background: transparent url('../images/tablet.png') no-repeat scroll 0 0;
+  width: 247px;
+  height: 414px;
+  top: 65px;
+  left: 0;
+  z-index: 2;
+}
+
+div#content #devices div.tablet iframe {
+  transform:scale(0.313);
+  -o-transform:scale(0.313);
+  -ms-transform:scale(0.313);
+  -moz-transform:scale(0.313);
+  -webkit-transform:scale(0.313);
+  border:0;
+  height:1027px;
+  left:-171px;
+  position:absolute;
+  top:-313px;
+  width:600px;
+}
+
+div#content #devices div.phone_landscape {
+  background: transparent url('../images/phone_landscape.png') no-repeat scroll 0 0;
+  height: 175px;
+  width: 337px;
+  top: 325px;
+  left: 85px;
+  z-index: 3;
+}
+
+div#content #devices div.phone_landscape iframe {
+  transform:scale(0.42);
+  -o-transform:scale(0.42);
+  -ms-transform:scale(0.42);
+  -moz-transform:scale(0.42);
+  -webkit-transform:scale(0.42);
+  border:0;
+  height:332px;
+  left:-130px;
+  position:absolute;
+  top:-84px;
+  width:600px;
+}
+
+div#content #devices div.phone_portrait {
+  background: transparent url('../images/phone_portrait.png') no-repeat scroll 0 0;
+  width: 180px;
+  height: 330px;
+  bottom: 0px;
+  right: 0px;
+  z-index: 3;
+}
+
+div#content #devices div.phone_portrait iframe {
+  transform:scale(0.29);
+  -o-transform:scale(0.29);
+  -ms-transform:scale(0.29);
+  -moz-transform:scale(0.29);
+  -webkit-transform:scale(0.29);
+  border:0;
+  height:857px;
+  left:-150px;
+  position:absolute;
+  top:-266px;
+  width:480px;
 }
 
 #installation .two-cols {
