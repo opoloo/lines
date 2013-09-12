@@ -94,6 +94,9 @@ The sitemap_generator gem (https://github.com/kjvarga/sitemap_generator) handles
 
 Don't forget to adjust the full url to your sitemaps in <tt>public/robots.txt</tt>
 
+== Documentation
+
+The complete documentation can be found ad rdoc.info: http://rdoc.info/github/opoloo/lines/master/frames
 
 == Customization
 
