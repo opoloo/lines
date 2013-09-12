@@ -96,7 +96,7 @@
 						</ul>
 					</div>
 					<div class="two-cols nomargin">
-						<h2>What it's not</h2>
+						<h2 class="margin-mobile">What it's not</h2>
 						<ul>
 							<li><span class="red">&#10799;</span> Wordpress, Blogger, or Squarespace</li>
 							<li><span class="red">&#10799;</span> a gem or a plugin</li>

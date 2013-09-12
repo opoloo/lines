@@ -12,8 +12,9 @@ smaller than 960px
   #meta {position: relative;}
   #meta nav ul li {display:none;}
   #meta nav ul li:first-child, #meta nav ul li:last-child {display:inline-block;}
+  div.two-cols, div.three-cols {width:30%;display:inline-block;float:none;}
   
-  .two-cols, .three-cols {max-width:100%;}
+  #installation .two-cols {margin:0px 0 10px 0;}
   .white_box {max-width:100%;}
   .white_box .two-cols {max-width:100%;}
   #head { padding:0px 30px 40px 30px; }
@@ -25,13 +26,20 @@ smaller than 600px
 *************************************************************************************/
 @media screen and (max-width: 600px) {
     body {font-size:0.9em;}
-    .two-cols, .three-cols {float:none;max-width:100%;display:block;}
+    div.two-cols, div.three-cols {float:none;width:100%;margin:0px;display:block;}
     header {padding:10px 0 0 0;  }
     h2 {font-size: 1.2em;}
+    .white_box {padding:15px;font-size:1.1em}
+    .white_box .two-cols, #features .two-cols { width:100%;float:none;  }
     .white_box h2 {margin:0 0 5px 0;}
+    div#content ul {margin:0;}
+    div#content ul li {margin:0 0 5px 0;}
+    
     h1 {font-size:1.7em;}
     h2 {margin:30px 0 5px 0;}
     hr {margin:20px 0px;}
+    h2.margin-mobile {margin:20px 0 5px 0;}
+    tt {padding:5px;}
 }
 
 /************************************************************************************
