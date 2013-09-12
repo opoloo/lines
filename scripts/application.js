@@ -15,7 +15,7 @@ $(document).ready(function(){
   });
 
   // Lightbox
-  $('.desc').magnificPopup({
+  $('#desc').magnificPopup({
     delegate: 'a',
     type: 'image',
     tLoading: 'Loading image #%curr%...',
