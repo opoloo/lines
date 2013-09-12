@@ -12,6 +12,8 @@ smaller than 960px
   #meta nav ul li {display:none;}
   #meta nav ul li:first-child, #meta nav ul li:last-child {display:inline-block;}
   
+  .white_box {max-width:100%;}
+  .white_box .two-cols {max-width:100%;}
 }
 
 

@@ -3,8 +3,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="author" content="opoloo GbR" />
-<meta name="description" content="" />
-<meta name="keywords" content="" />
+<meta name="description" content="LINES is the open source blog platform you have been waiting for." />
+<meta name="keywords" content="lines, blog, open source, rails, rubyonrails, publish, write, manage, edit, articles" />
 <meta http-equiv="Content-Type"	content="text/html; charset=UTF-8" />
 <link href='http://fonts.googleapis.com/css?family=Gentium+Basic:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Ubuntu+Condensed|Ubuntu:400,300,500,700|Ubuntu+Mono' rel='stylesheet' type='text/css'>
@@ -56,7 +56,7 @@ $(document).ready(function(){
 				<li><a href="#installation">Installation</a></li>
 				<li><a href="#docu">Documentation</a></li>
 				<li><a href="#contribute">Contribute</a></li>
-				<li><a href="http://blog.opoloo.com/">LINES in action</a></li>
+				<li class="linesaction"><a href="http://blog.opoloo.com/">LINES in action</a></li>
 				<li><a href="https://github.com/opoloo/lines"><img style="position: fixed; top: 0; right: 0; border: 0;z-index:999;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a></li>
 			</ul>
 		<div class="clearfix"></div>
@@ -72,10 +72,11 @@ $(document).ready(function(){
 			<div class="intro">
 				<h1>LINES is the open source blog platform you<span>*</span> have been waiting for.</h1>
 				<hr/>
-				<p>*You are a Ruby on Rails developer. <br/>
-				You care about your writing and a beautiful, mobile-optimized presentation.<br/>	
-				You appreciate a solid editing system without unnecessary buzz. 		<br/>
-				You want full control.</p>
+				<p><span class="red">*</span> You are a Ruby on Rails developer. <br/>
+
+You care about your writing and lucid mobile presentation.<br/> 
+
+You need an editing system without useless buzz. </p>
 			</div>
 		</div>
 		<div id="desc">
@@ -115,10 +116,10 @@ $(document).ready(function(){
 			<div class="two-cols nomargin">
 				<h2>What it's not</h2>
 				<ul>
-					<li>&#10799; Wordpress, Blogger, or Squarespace</li>
-					<li>&#10799; a gem or a plugin</li>
-					<li>&#10799; an overblown framework with theme craziness</li>
-					<li>&#10799; an incoherent pile of options</li>
+					<li><span class="red">&#10799;</span> Wordpress, Blogger, or Squarespace</li>
+					<li><span class="red">&#10799;</span> a gem or a plugin</li>
+					<li><span class="red">&#10799;</span> an overblown framework with theme craziness</li>
+					<li><span class="red">&#10799;</span> an incoherent pile of options</li>
 				</ul>
 			</div>
 			<div class="clearfix"></div>
@@ -126,7 +127,7 @@ $(document).ready(function(){
 		<hr/>
 		<div class="one-col">
 			<h2>Optimized for reading</h2>
-			<p>The best writing in the world amounts to nothing if you can't read it how you want it, where you want it. Lines is optimized for a clean reading experience that scales perfectly to big and small screens.</p>
+			<p>The best writing in the world amounts to nothing if you can't read it how you want it, where you want it. LINES is optimized for a clean reading experience that scales perfectly to big and small screens.</p>
 			<ul>
 				<li>| clear & comprehensive overview of your posts</li>
 				<li>| header graphics for visual identification</li>

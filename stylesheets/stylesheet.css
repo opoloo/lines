@@ -51,15 +51,19 @@ a:hover {
   color: #3d3d3d; }
 
 h1 {
-  font-weight: 700;
+  font-weight: 500;
   font-size: 2.600em;
   line-height: 1.1em;
   margin: 0;
   padding: 0 0 0px 0;
   color:#872121;
   display: block;
-  letter-spacing: 0em;
+  letter-spacing: -0.03em;
   font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+h1 span {
+  color: #282424;  
 }
 
 
@@ -67,12 +71,12 @@ h2 {
   font-size: 1.722em;
   line-height: 1em;
   font-family: 'Ubuntu Condensed', sans-serif;
-  letter-spacing: 0.01em;
+  letter-spacing: -0.02em;
   font-weight: 100;
   margin: 0px 0 15px 0;
   padding: 0 0 0 0px;
   text-align: left;
-  color: #544f4e;
+  color: #333;
   }
 
 
@@ -135,7 +139,7 @@ tt {
 
 
 #head {
-  padding:50px 80px 100px 80px;
+  padding:20px 80px 80px 80px;
 }
 
 header {
@@ -193,6 +197,16 @@ header h2 {
 #meta nav ul li a {
   color:#333;
   border-bottom: none;
+}
+
+#meta nav ul li.linesaction a {
+  margin:0 0 0 100px;
+  text-transform: none;
+  color:#872121;
+}
+
+#meta nav ul li.linesaction a:hover {
+  color:#333;
 }
 
 #meta nav ul li a:hover, #meta nav ul li a.active {
@@ -261,14 +275,18 @@ div#content #devices {
 .white_box {
   background-color:#fff;
   padding:30px;
-  width:650px;
+  width:720px;
   font-size:0.9em;
   border-bottom: 2px solid #e6e6e6;
   margin:0px auto;
 }
 
 .white_box .two-cols {
-  width:300px;
+  width:360px;
+}
+
+#features .two-cols {
+  width:330px;
 }
 
 /*-----------------------------------------------------------*/
@@ -337,7 +355,9 @@ a.nostyle {
 /*-----------------------------------------------------------*/
 /*-----------------------------------------------------------*/
 
-
+.red {
+  color:#872121;  
+}
 
 
 .center {
