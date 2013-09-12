@@ -1,0 +1,6 @@
+<% render_break = (article_collection_counter % 2) != 0 ? true : false %>
+
+<%= render article_collection, article: article_collection, article_counter: article_collection_counter %>
+<% if render_break %>
+  <div class="breaker" style="clear:both;height:1px;line-height:1px">&nbsp;</div>
+<% end %>

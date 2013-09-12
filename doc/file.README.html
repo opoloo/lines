@@ -1,0 +1,257 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>
+  File: README
+  
+    &mdash; Documentation by YARD 0.8.7
+  
+</title>
+
+  <link rel="stylesheet" href="css/style.css" type="text/css" charset="utf-8" />
+
+  <link rel="stylesheet" href="css/common.css" type="text/css" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  hasFrames = window.top.frames.main ? true : false;
+  relpath = '';
+  framesUrl = "frames.html#!" + escape(window.location.href);
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div id="header">
+      <div id="menu">
+  
+    <a href="_index.html">Index</a> &raquo; 
+    <span class="title">File: README</span>
+  
+
+  <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
+</div>
+
+      <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="class_list.html">
+      Class List
+    </a>
+  
+    <a class="full_list_link" id="method_list_link"
+        href="method_list.html">
+      Method List
+    </a>
+  
+    <a class="full_list_link" id="file_list_link"
+        href="file_list.html">
+      File List
+    </a>
+  
+</div>
+      <div class="clear"></div>
+    </div>
+
+    <iframe id="search_frame"></iframe>
+
+    <div id="content"><div id='filecontents'>
+<h1 id="label-Lines+Blog+by+Opoloo">Lines Blog by <a href="http://www.opoloo.com">Opoloo</a></h1>
+
+<h2 id="label-Introduction">Introduction</h2>
+
+<p>Lines is a customizable blog framework for rails developers. It aims at
+making publishing simple and beautiful.</p>
+
+<p>Lines is a very slim, feature-constrained, young publishing platform. It is
+not wordpress or blogger and it doesn&#39;t aspire to be. It needs brains,
+work, and time to mature. It is a framework for tech-savvies who care about
+their content with the freedom of full OSS access.</p>
+
+<p>To get an idea of the appearance, see the screenshots below, visit the <a
+href="http://lines.opoloo.com">Lines Website</a>, or see it in action at
+link: <a href="http://blog.opoloo.com">blog.opoloo.com</a></p>
+
+<h2 id="label-Features+%26+Specifications">Features &amp; Specifications</h2>
+<ul><li>
+<p>based on Rails 3.2</p>
+</li><li>
+<p>solid editing system</p>
+</li><li>
+<p>simple, consistent publishing process</p>
+</li><li>
+<p>clear, responsive presentation</p>
+</li><li>
+<p>extendable &amp; customizable</p>
+</li><li>
+<p>full focus on content</p>
+</li></ul>
+
+<h3 id="label-Features">Features</h3>
+<ul><li>
+<p>960x540 px hero graphics for posts</p>
+</li><li>
+<p>upload default hero images that you want to use more frequently</p>
+</li><li>
+<p>customizable generic titles &amp; subtitles</p>
+</li><li>
+<p>automatic teaser &amp; scaled image for the article overview</p>
+</li><li>
+<p>determine featured article</p>
+</li><li>
+<p>six headline styles according to priority</p>
+</li><li>
+<p>italics &amp; bold text</p>
+</li><li>
+<p>block quotes</p>
+</li><li>
+<p>images, lists, links</p>
+</li><li>
+<p>tags for articles</p>
+</li><li>
+<p>G+ link to social network discussion</p>
+</li><li>
+<p>multiple authors and author information (for your small company or guest
+authors)</p>
+</li><li>
+<p>add documents for download</p>
+</li><li>
+<p>formatting help</p>
+</li><li>
+<p>direct RSS reader access</p>
+</li><li>
+<p>code highlighting</p>
+</li></ul>
+
+<h2 id="label-Installation">Installation</h2>
+<ol><li>
+<p>Clone the repository:</p>
+
+<pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_git'>git</span> <span class='id identifier rubyid_clone'>clone</span> <span class='id identifier rubyid_git'>git</span><span class='ivar'>@github</span><span class='period'>.</span><span class='id identifier rubyid_com'>com</span><span class='symbol'>:opoloo</span><span class='op'>/</span><span class='id identifier rubyid_lines'>lines</span><span class='period'>.</span><span class='id identifier rubyid_git'>git</span></code></pre>
+</li><li>
+<p>Switch into the lines directory:</p>
+
+<pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_cd'>cd</span> <span class='id identifier rubyid_lines'>lines</span></code></pre>
+</li><li>
+<p>There is a installation task that will guide you through the rest of the
+installation process. Just switch to the &#39;lines&#39; directory and run:</p>
+
+<pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_bundle'>bundle</span> <span class='id identifier rubyid_exec'>exec</span> <span class='id identifier rubyid_rake'>rake</span> <span class='label'>lines:</span><span class='id identifier rubyid_setup'>setup</span></code></pre>
+</li></ol>
+
+<p>If you need some more information or help, you can just follow this readme
+file.</p>
+
+<h3 id="label-Managing+admin+users">Managing admin users</h3>
+
+<p>Currently Lines does not offer a GUI for managing users. Just open a
+console with &#39;rails c&#39; and add/change a user manually:</p>
+
+<pre class="code ruby"><code class="ruby"><span class='comment'># CREATE a new user
+</span><span class='const'>User</span><span class='period'>.</span><span class='id identifier rubyid_create'>create</span><span class='lparen'>(</span><span class='label'>email:</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>your@email.com</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='label'>password:</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>yoursecret</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+
+<span class='comment'># UPDATE an existing user
+</span><span class='id identifier rubyid_u'>u</span> <span class='op'>=</span> <span class='const'>User</span><span class='period'>.</span><span class='id identifier rubyid_find_by_email'>find_by_email</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>your@email.com</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
+<span class='id identifier rubyid_u'>u</span><span class='period'>.</span><span class='id identifier rubyid_email'>email</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>new@mail.com</span><span class='tstring_end'>&quot;</span></span>
+<span class='id identifier rubyid_u'>u</span><span class='period'>.</span><span class='id identifier rubyid_password'>password</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>newsekret</span><span class='tstring_end'>&quot;</span></span>
+<span class='id identifier rubyid_u'>u</span><span class='period'>.</span><span class='id identifier rubyid_save'>save</span></code></pre>
+
+<h3 id="label-Adjust+database+details">Adjust database details</h3>
+
+<p>To adjust your database details, go to <code>config/database.yml</code></p>
+
+<pre class="code ruby"><code class="ruby">username: DATABASE_USERNAME
+password: DATABASE_PASSWORD</code></pre>
+
+<p>There&#39;ll be 3 blocks that contain <code>username</code> &amp;
+<code>password</code>. Development-, Test- &amp; Production-Database.</p>
+
+<p>If there is no <code>config/database.yml</code>, just copy the
+<code>config/database.yml.dist</code> like that:</p>
+
+<pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_cd'>cd</span> <span class='id identifier rubyid_config'>config</span>
+<span class='id identifier rubyid_cp'>cp</span> <span class='id identifier rubyid_database'>database</span><span class='period'>.</span><span class='id identifier rubyid_yml'>yml</span><span class='period'>.</span><span class='id identifier rubyid_dist'>dist</span> <span class='id identifier rubyid_database'>database</span><span class='period'>.</span><span class='id identifier rubyid_yml'>yml</span></code></pre>
+
+<p>or like this (in case you want to stay in your root directory):</p>
+
+<pre class="code ruby"><code class="ruby">cp config/database.yml.dist config/database.yml</code></pre>
+
+<p>Renaming the <code>config/database.yml.dist</code> to
+<code>config/database.yml</code> works as well.</p>
+
+<h3 id="label-Google+Sitemap">Google Sitemap</h3>
+
+<p>The sitemap_generator gem (<a
+href="https://github.com/kjvarga/sitemap_generator">github.com/kjvarga/sitemap_generator</a>)
+handles the creation of sitemaps for search engines. To update the sitemap
+on server, run:</p>
+
+<pre class="code ruby"><code class="ruby">bundle exec rake sitemap:refresh:no_ping # don&#39;t ping search engines
+bundle exec rake sitemap:refresh         # ping search engines</code></pre>
+
+<p>Don&#39;t forget to adjust the full url to your sitemaps in
+<code>public/robots.txt</code></p>
+
+<h2 id="label-Customization">Customization</h2>
+
+<h3 id="label-Modify+CSS%2FSCSS">Modify CSS/SCSS</h3>
+
+<p>Admin viewer SCSS: <code>app/assets/stylesheets/admin.css.scss</code></p>
+
+<p>Default viewer SCSS: <code>app/assets/stylesheets/style.css.scss</code></p>
+
+<h3 id="label-Modify+custom+hero+images">Modify custom hero images</h3>
+
+<p>You can add, remove or change the <code>HERO_IMAGES</code> variable inside
+the <code>app/models/article.rb</code> model. The corresponding images
+reside inside the <code>public/heroes</code> directory.</p>
+
+<h3 id="label-Header+%28Meta%29+%26+Footer">Header (Meta) &amp; Footer</h3>
+
+<p>To change the header/meta/footer elements you need to modify
+<code>app/views/layouts/application.html.erb</code></p>
+
+<h2 id="label-Screenshots">Screenshots</h2>
+
+<p>Some screenshots to get an impression of the look &amp; feel</p>
+
+<h3 id="label-Dashboard">Dashboard</h3>
+
+<p><img src="http://lines.opoloo.com/images/screenshot_01.png" /></p>
+
+<h3 id="label-Create+or+edit+an+article">Create or edit an article</h3>
+
+<p><img src="http://lines.opoloo.com/images/screenshot_02.png" /></p>
+
+<h3 id="label-Preview+and+publish">Preview and publish</h3>
+
+<p><img src="http://lines.opoloo.com/images/screenshot_03.png" /></p>
+
+<h2 id="label-License">License</h2>
+
+<p>You may use the Lines blog template as you please. You must, however, keep
+the footer section, so attribution to <a
+href="http://lines.opoloo.com">Lines</a> and <a
+href="http://www.opoloo.com">Opoloo</a> is granted.</p>
+
+<p>We heartily invite you to extend the features of the template, but when you
+do, you should fork it on GitHub, so everyone can profit from your work.</p>
+
+<p>You can see the full license here: <a
+href="http://choosealicense.com/licenses/lgpl-v3">choosealicense.com/licenses/lgpl-v3</a>/</p>
+</div></div>
+
+    <div id="footer">
+  Generated on Thu Sep 12 16:33:04 2013 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.8.7 (ruby-2.0.0).
+</div>
+
+  </body>
+</html>

@@ -1,0 +1,11 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+en:
+  views:
+    pagination:
+      first: "Newest"
+      last: "Oldest"
+      previous: "Newer"
+      next: "Older"
+      truncate: "..."

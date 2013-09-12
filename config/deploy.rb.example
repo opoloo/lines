@@ -1,0 +1,72 @@
+# This in an example recipe for deployment via capistrano.
+# Feel free to adjust this recipe to your individual needs
+# More information about capistrano: http://www.capistranorb.com/
+
+
+require 'bundler/capistrano'
+
+set :default_stage, "production"
+set :application, "lines"
+set :user, 'your_deployment_user'
+set :port, 22
+
+# replace this line with your forked repository
+set :repository,  "git@github.com:opoloo/lines.git"
+
+set :scm, :git
+set :branch, 'master'
+set :scm_verbose, true
+
+role(:web) { domain }
+role(:app) { domain }
+role(:db) { domain }
+
+set(:deploy_to) { "#{applicationdir}" }
+set :deploy_via, :export
+set(:git_shallow_clone) { false }
+
+# additional settings
+default_run_options[:pty] = true 
+ssh_options[:forward_agent] = true
+ssh_options[:keys] = %w(/path/to/your/ssh/key/id_rsa)
+set :use_sudo, false
+
+
+# Passenger
+namespace :deploy do
+
+  namespace :assets do
+    task :symlink, roles: :web do
+      run ("rm -rf #{latest_release}/public/assets &&
+            mkdir -p #{latest_release}/public &&
+            mkdir -p #{shared_path}/assets &&
+            ln -s #{shared_path}/assets #{latest_release}/public/assets")
+    end
+  end
+  desc "Install bundled gems as root"
+  task :bundle do
+    run "cd #{release_path}; sudo bundle install"
+  end
+
+  desc "Symlink shared configs and folders on each release."
+  task :symlink_shared do
+    run "ln -nfs #{shared_path}/uploads #{release_path}/public/uploads"
+  end
+
+  desc "copy and link database.yml"
+  task :configure_database do
+    run "mkdir -p #{shared_path}/config"
+    run "cp #{release_path}/config/database.yml.dist #{shared_path}/config/database.yml"
+    run "ln -nfs #{shared_path}/config/database.yml #{release_path}/config/database.yml"
+  end
+
+  task :start do ; end
+  task :stop do ; end
+  task :restart, :roles => :app, :except => { :no_release => true } do
+    run "#{try_sudo} touch #{File.join(current_path,'tmp','restart.txt')}"
+  end
+end
+
+before 'deploy:finalize_update', 'deploy:assets:symlink'
+after 'deploy:finalize_update', 'deploy:configure_database'
+after 'deploy:update_code', 'deploy:symlink_shared'
