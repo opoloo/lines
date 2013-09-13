@@ -84,6 +84,10 @@ smaller than 960px
   #installation .two-cols p {
     padding: 10px 0px;
   }
+
+  #teaser {
+    margin-top: 15px;
+  }
 }
 
 
