@@ -92,9 +92,8 @@ smaller than 960px
     padding: 10px 0px;
   }
 
-  #teaser {
-    margin-top: 15px;
-  }
+  #teaser { margin-top: 15px; }
+  #meta nav ul li#github {position: absolute;}
 }
 
 
