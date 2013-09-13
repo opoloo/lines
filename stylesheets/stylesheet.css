@@ -239,9 +239,12 @@ header h3 {
 
 #desc img {
   margin:10px 0px 0 0;
-  border:1px solid #e6e6e6;
+  border:3px solid #e6e6e6;
   line-height: 0px;
-  
+}
+
+#desc img:hover {
+  border:3px solid #ccc;
 }
 
 #desc .three-cols {
@@ -252,8 +255,8 @@ header h3 {
   position: absolute;
   right:0px;
   bottom:0px;
-  margin-bottom:8px;
-  margin-right:-1px;
+  margin-bottom:10px;
+  margin-right:-3px;
   height:12px;
   width:12px;
   padding:5px;
