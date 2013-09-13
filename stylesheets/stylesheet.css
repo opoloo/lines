@@ -123,9 +123,12 @@ div.three-cols:last-child {
   margin: 0px auto; }
   
   
-tt {
-  padding:10px;
+em {
+  padding:8px;
+  font-size:0.9em;
   background-color:#f2f2f2;
+  font-family: 'Ubuntu Mono', sans-serif;
+  font-style: normal;
 }
 
 .float-left {
@@ -184,12 +187,14 @@ header h3 {
   font-size: 0.80em;
   font-weight: 400;
   float:left;
+  
   font-family: 'Ubuntu', sans-serif; 
   }
   
 
 #meta nav ul li {
   float: left;
+  display:inline-block;
   margin: 0 0 0 40px; }
   
 #meta nav ul li#logo {
@@ -304,6 +309,18 @@ div#content ul li {
   margin:14px 0 0 0;  
   color:#666;
 }
+
+div#content ul.check li {
+  background: transparent url('../images/ic_check.png') 0px 8px no-repeat;
+  padding:0 0 0 20px;
+}
+
+div#content ul.cross li {
+  background: transparent url('../images/ic_cross.png') 0px 7px no-repeat;
+  padding:0 0 0 20px;
+}
+
+
 
 div#content #devices {
   margin:40px 0 0 0;
