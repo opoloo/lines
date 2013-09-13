@@ -48,6 +48,42 @@ smaller than 960px
   div#content #devices div {
     display: none;
   }
+
+  #download a {
+    width: 100%;
+    box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+  }
+
+  #contribute .two-cols img, #contribute .two-cols h3 {
+    display: block;
+    margin: 0 auto;
+  }
+
+  #contribute .two-cols img {
+    margin-bottom: 15px;
+  }
+
+  .float-left {
+    float: none;
+  }
+
+  #contribute .two-cols {
+    float: none;
+    text-align: center;
+    padding-right: 0;
+  }
+
+  #installation .two-cols {
+    text-align: left;
+  }
+
+  #installation .two-cols p {
+    padding: 10px 0px;
+  }
 }
 
 
@@ -63,6 +99,12 @@ smaller than 600px
       display:block;
       max-width: 100%;
       text-align: center;
+    }
+    ul {
+      margin-top: 15px !important;
+    }
+    #features .two-cols {
+      text-align: left;
     }
     header {padding:10px 0 0 0;  }
     h2 {font-size: 1.2em;}
