@@ -246,7 +246,7 @@ header h3 {
 
 #desc img {
   margin:10px 0px 0 0;
-  border:3px solid #e6e6e6;
+  border:3px solid #a8a8a8;
   line-height: 0px;
 }
 
@@ -268,7 +268,7 @@ header h3 {
   width:12px;
   padding:5px;
   color:#fff;
-  background: url('../images/ic_plus.png') center center no-repeat #e6e6e6;
+  background: url('../images/ic_plus.png') center center no-repeat #a8a8a8;
   display:inline-block;
 }
 
