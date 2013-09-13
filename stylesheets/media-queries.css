@@ -15,7 +15,6 @@ smaller than 960px
   div.two-cols, div.three-cols {
     float: none;
     display: inline-block;
-    width: 32%;
     margin: 0;
     padding-right: 30px;
     box-sizing: border-box;
@@ -24,6 +23,14 @@ smaller than 960px
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     vertical-align: top;
+  }
+
+  div.two-cols {
+    width: 49%;
+  }
+
+  div.three-cols {
+    width: 32%;
   }
 
   div.three-cols .nomargin {
@@ -100,12 +107,25 @@ smaller than 600px
       float:none;
       width:100%;
       margin:15px 0 0 0;
+      padding: 0;
       display:block;
       max-width: 100%;
       text-align: center;
     }
     ul {
       margin-top: 15px !important;
+    }
+    #docu .two-cols {
+      text-align: left;
+    }
+    #docu br {
+      display: none;
+    }
+    div#content {
+      padding: 40px 0 0;
+    }
+    div#footer {
+      padding: 20px 0 0 !important;
     }
     #features .two-cols {
       text-align: left;
