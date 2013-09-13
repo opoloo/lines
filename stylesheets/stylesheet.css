@@ -85,6 +85,10 @@ h3 {
   font-size:1em;
 }
 
+h3 span {
+  color:#872121; 
+}
+
 .one-col {
   max-width: 650px;
   text-align: left;
@@ -204,6 +208,8 @@ header h3 {
   margin:0 0 0 100px;
   text-transform: none;
   color:#872121;
+  background-color:#f8f8f8;
+  padding:5px;
 }
 
 #meta nav ul li.linesaction a:hover {
@@ -280,7 +286,7 @@ header h3 {
 /*-----------------------------------------------------------*/
 
 div#content {
-  padding:80px 0 0px 0;
+  padding:60px 0 0px 0;
   display:block;
 }
 
@@ -514,7 +520,6 @@ div#content #devices div.phone_portrait iframe {
   padding: 20px 40px;
   color: #fff;
   font-size: 36px;
-  border-radius: 3px;
   margin: 0 auto;
   text-transform: uppercase;
   width: 640px;
@@ -593,7 +598,8 @@ a.nostyle {
 /*-----------------------------------------------------------*/
 
 .red {
-  color:#872121;  
+  color:#872121; 
+  font-size:0.7em;
   font-family: Arial, sans-serif;
 }
 

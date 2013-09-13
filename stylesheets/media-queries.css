@@ -12,31 +12,13 @@ smaller than 960px
   #meta {position: relative;}
   #meta nav ul li {display:none;}
   #meta nav ul li:first-child, #meta nav ul li:last-child {display:inline-block;}
-  div.two-cols, div.three-cols {
-    float: none;
-    display: inline-block;
-    margin: 0;
-    padding-right: 30px;
-    box-sizing: border-box;
-    -o-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    vertical-align: top;
-  }
+  div.two-cols, div.three-cols {float: none;  display: inline-block;  margin: 0; padding-right: 30px; box-sizing: border-box; -o-box-sizing: border-box; -ms-box-sizing: border-box;
+    -moz-box-sizing: border-box; -webkit-box-sizing: border-box; vertical-align: top;}
 
-  div.two-cols {
-    width: 49%;
-  }
+  div.two-cols {width: 49%;}
+  div.three-cols {width: 32%;}
 
-  div.three-cols {
-    width: 32%;
-  }
-
-  div.three-cols .nomargin {
-    padding: 0;
-    margin: 0;
-  }
+  div.three-cols .nomargin {padding: 0; margin: 0; }
   
   #installation .two-cols {margin:0px 0 10px 0;}
   .white_box {max-width:100%;}
@@ -44,56 +26,37 @@ smaller than 960px
   .white_box h2 {margin:0 0 5px 0;}
   #head { padding:0px 30px 40px 30px; }
 
-  div#content #devices {
-    height: auto;
-  }
+  div#content #devices {height: auto; }
+  div#content #devices img {display: block; }
+  div#content #devices div {display: none; }
+  #download a {width: 100%;  box-sizing: border-box; -o-box-sizing: border-box; -ms-box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; }
 
-  div#content #devices img {
-    display: block;
-  }
+  #contribute .two-cols img, #contribute .two-cols h3 {display: block;margin: 0 auto; }
+  #contribute .two-cols img {  margin-bottom: 15px; }
 
-  div#content #devices div {
-    display: none;
-  }
+  .float-left { float: none;}
 
-  #download a {
-    width: 100%;
-    box-sizing: border-box;
-    -o-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-  }
-
-  #contribute .two-cols img, #contribute .two-cols h3 {
-    display: block;
-    margin: 0 auto;
-  }
-
-  #contribute .two-cols img {
-    margin-bottom: 15px;
-  }
-
-  .float-left {
-    float: none;
-  }
-
-  #contribute .two-cols {
-    float: none;
-    text-align: center;
-    padding-right: 0;
-  }
-
-  #installation .two-cols {
-    text-align: left;
-  }
-
-  #installation .two-cols p {
-    padding: 10px 0px;
-  }
+  #contribute .two-cols { float: none; text-align: center;padding-right: 0; }
+  #installation .two-cols { text-align: left; }
+  #installation .two-cols p { padding: 10px 0px;}
 
   #teaser { margin-top: 15px; }
   #meta nav ul li#github {position: absolute;}
+  
+  #desc .plus { bottom:0px;left:42%; margin-bottom:8px; }
+}
+
+/************************************************************************************
+smaller than 860px
+*************************************************************************************/
+@media screen and (max-width: 860px) {
+  div#content {padding: 20px 0 0;}
+  .white_box {padding:15px;font-size:1.1em}
+  .white_box .two-cols, #features .two-cols { width:100%;float:none;  }
+  #features {font-size:1em;}
+  h2 {margin:30px 0 5px 0;}
+  h2.margin-mobile {margin:20px 0 5px 0;}
+  
 }
 
 
@@ -102,45 +65,23 @@ smaller than 600px
 *************************************************************************************/
 @media screen and (max-width: 600px) {
     body {font-size:0.9em;}
-    div.two-cols, div.three-cols {
-      float:none;
-      width:100%;
-      margin:15px 0 0 0;
-      padding: 0;
-      display:block;
-      max-width: 100%;
-      text-align: center;
-    }
-    ul {
-      margin-top: 15px !important;
-    }
-    #docu .two-cols {
-      text-align: left;
-    }
-    #docu br {
-      display: none;
-    }
-    div#content {
-      padding: 40px 0 0;
-    }
-    div#footer {
-      padding: 20px 0 0 !important;
-    }
-    #features .two-cols {
-      text-align: left;
-    }
+    div.two-cols, div.three-cols {float:none; width:100%; margin:15px 0 0 0; padding: 0; display:block; max-width: 100%; text-align: center; }
+    ul { margin-top: 15px !important; }
+    #docu .two-cols { text-align: left; }
+    #docu br {display: none;  }
+    
+    div#footer {padding: 20px 0 0 !important;}
+    #features .two-cols { text-align: left;}
     header {padding:10px 0 0 0;  }
     h2 {font-size: 1.2em;}
-    .white_box {padding:15px;font-size:1.1em}
-    .white_box .two-cols, #features .two-cols { width:100%;float:none;  }
+    #desc .plus { bottom:0px;left:48%; margin-bottom:8px; }
+    
     
     div#content ul {margin:0;}
     div#content ul li {margin:0 0 5px 0;}
     
-    h1 {font-size:1.7em;}
-    h2 {margin:30px 0 5px 0;}
-    hr {margin:20px 0px;}
-    h2.margin-mobile {margin:20px 0 5px 0;}
+    h1 {font-size:1.7em;}  
+    hr {margin:20px 0px;}   
     tt {padding:5px;}
 }
 
