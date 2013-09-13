@@ -273,6 +273,7 @@ div#content #devices img {
 
 div#content #devices div {
   position: absolute;
+  overflow: hidden;
 }
 
 div#content #devices div.desktop {
