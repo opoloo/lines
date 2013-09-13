@@ -274,9 +274,13 @@ div#content #devices img {
   display: none;
 }
 
-div#content #devices div {
+div#content #devices > div {
   position: absolute;
+}
+
+div#content #devices > div .frame-box {
   overflow: hidden;
+  position: relative;
 }
 
 div#content #devices div.desktop {
@@ -284,8 +288,19 @@ div#content #devices div.desktop {
   width: 649px;
   height: 478px;
   left: 260px;
+  padding: 22px 0px 0px 23px;
+  box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   top: 0;
   z-index: 1;
+}
+
+div#content #devices div.desktop .frame-box {
+  width: 604px;
+  height: 315px;
 }
 
 div#content #devices div.desktop iframe {
@@ -295,10 +310,10 @@ div#content #devices div.desktop iframe {
   -moz-transform:scale(0.42);
   -webkit-transform:scale(0.42);
   border:0;
-  height:745px;
-  left:-396px;
+  height:746px;
+  left:-419px;
   position:absolute;
-  top:-192px;
+  top:-215px;
   width:1440px;
 }
 
@@ -308,20 +323,31 @@ div#content #devices div.tablet {
   height: 414px;
   top: 65px;
   left: 0;
+  padding: 41px 0px 0px 34px;
+  box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   z-index: 2;
 }
 
+div#content #devices div.tablet .frame-box {
+  width: 189px;
+  height: 321px;
+}
+
 div#content #devices div.tablet iframe {
-  transform:scale(0.313);
-  -o-transform:scale(0.313);
-  -ms-transform:scale(0.313);
-  -moz-transform:scale(0.313);
-  -webkit-transform:scale(0.313);
+  transform:scale(0.315);
+  -o-transform:scale(0.315);
+  -ms-transform:scale(0.315);
+  -moz-transform:scale(0.315);
+  -webkit-transform:scale(0.315);
   border:0;
   height:1027px;
-  left:-171px;
+  left:-206px;
   position:absolute;
-  top:-313px;
+  top:-352px;
   width:600px;
 }
 
@@ -331,7 +357,18 @@ div#content #devices div.phone_landscape {
   width: 337px;
   top: 325px;
   left: 85px;
+  padding: 11px 0px 0px 46px;
+  box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   z-index: 3;
+}
+
+div#content #devices div.phone_landscape .frame-box {
+  height: 143px;
+  width: 251px;
 }
 
 div#content #devices div.phone_landscape iframe {
@@ -341,10 +378,10 @@ div#content #devices div.phone_landscape iframe {
   -moz-transform:scale(0.42);
   -webkit-transform:scale(0.42);
   border:0;
-  height:332px;
-  left:-130px;
+  height:339px;
+  left:-175px;
   position:absolute;
-  top:-84px;
+  top:-98px;
   width:600px;
 }
 
@@ -354,20 +391,31 @@ div#content #devices div.phone_portrait {
   height: 330px;
   bottom: 0px;
   right: 0px;
+  padding: 37px 0px 0px 19px;
+  box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   z-index: 3;
 }
 
+div#content #devices div.phone_portrait .frame-box {
+  height: 250px;
+  width: 142px;
+}
+
 div#content #devices div.phone_portrait iframe {
-  transform:scale(0.29);
-  -o-transform:scale(0.29);
-  -ms-transform:scale(0.29);
-  -moz-transform:scale(0.29);
-  -webkit-transform:scale(0.29);
+  transform:scale(0.295);
+  -o-transform:scale(0.295);
+  -ms-transform:scale(0.295);
+  -moz-transform:scale(0.295);
+  -webkit-transform:scale(0.295);
   border:0;
-  height:857px;
-  left:-150px;
+  height:860px;
+  left:-169px;
   position:absolute;
-  top:-266px;
+  top:-305px;
   width:480px;
 }
 
