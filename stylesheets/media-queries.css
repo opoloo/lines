@@ -44,6 +44,8 @@ smaller than 960px
   #meta nav ul li#github {position: absolute;}
   
   #desc .plus { bottom:0px;left:42%; margin-bottom:8px; }
+  
+  #footer {  background-attachment:url('../images/footer.png') top center no-repeat #f8f8f8 scroll;}
 }
 
 /************************************************************************************
