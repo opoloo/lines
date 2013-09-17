@@ -1,3 +1,4 @@
+# encoding: utf-8
 namespace :lines do
   
   desc "Setting up database and default entries."
@@ -11,7 +12,7 @@ namespace :lines do
     puts "  2. Adjust config/database.yml to your needs:"
     puts "       username: DATABASE_USERNAME"
     puts "       password: DATABASE_PASSWORD"
-    puts "     There’ll be 3 blocks that contain username & password: development-, test- & production-database.\n\n"
+    puts "     There'll be 3 blocks that contain username & password: development-, test- & production-database.\n\n"
     puts "  3. Optional: Adjust config/lines_config.yml to your needs"
     print "\nIf you're done with the above, press <ENTER> to continue or <CTRL+C> to abort. "
     STDIN.gets
