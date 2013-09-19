@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.13'
+gem 'rails', '4.0.0'
 gem 'mysql2'
 gem 'rmagick'
 gem 'carrierwave'
@@ -8,11 +8,11 @@ gem 'kaminari'
 gem 'pygments.rb'
 gem 'redcarpet'
 gem 'jquery-rails', '2.1.4'
-gem 'friendly_id', '>= 4.0.9'
+gem 'friendly_id', github: 'norman/friendly_id'
 gem 'acts-as-taggable-on', '>= 2.3.3'
-gem 'rails3-jquery-autocomplete'
-gem 'bcrypt-ruby'
-gem 'simple_form'
+gem 'rails3-jquery-autocomplete', github: 'francisd/rails3-jquery-autocomplete'
+gem 'bcrypt-ruby', '~> 3.0.0'
+gem 'simple_form', '~> 3.0.0.rc'
 gem 'meta-tags', require: 'meta_tags'
 gem 'sitemap_generator'
 gem 'rack-ssl-enforcer', require: 'rack/ssl-enforcer'
@@ -20,11 +20,9 @@ gem 'jquery-fileupload-rails'
 gem 'jquery-ui-rails'
 gem 'sanitize'
 
-group :assets do
-  gem 'sass-rails',   '>= 3.2.3'
-  gem 'coffee-rails', '>= 3.2.1'
-  gem 'uglifier', '>= 1.0.3'
-end
+gem 'sass-rails',   '>= 4.0.0'
+gem 'coffee-rails', '>= 4.0.0'
+gem 'uglifier', '>= 1.3.0'
 
 group :production do
   #gem 'pg'

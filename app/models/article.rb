@@ -8,18 +8,16 @@
 # is added to the slug title if the it already exists in the database.
 class Article < ActiveRecord::Base
   extend FriendlyId
-  friendly_id :title, use: [:slugged, :history]
+  friendly_id :title, use: [:slugged, :history, :finders]
 
   # Relations
   has_many :pictures
   has_many :authorables
   has_many :authors, through: :authorables
 
-  # Attribute access control
-  attr_accessible :content, :hero_image, :short_hero_image, :published, :published_at, :sub_title, :title, :pictures,
-                  :author_ids, :hero_image_cache, :tag_list, :gplus_url, :featured, :document, :document_cache, :hero_image_file, :remove_document
   attr_accessor :hero_image_file
   accepts_nested_attributes_for :pictures, :authors
+
 
   # Mount Carrierwave uploaders
   mount_uploader :hero_image, HeroImageUploader
@@ -37,7 +35,7 @@ class Article < ActiveRecord::Base
   after_save :update_used_images, :refresh_sitemap
 
   # Model Scopes
-  scope :published, where(published: true).order("featured DESC, published_at DESC")
+  scope :published, -> { where(published: true).order("featured DESC, published_at DESC") }
 
   # Predifined hero images.
   # Images are loaded from the <tt>public/heroes</tt> directory
@@ -73,7 +71,7 @@ private
     ActionController::Base.new.expire_fragment(self)
     image_ids = self.used_images
     if !image_ids.nil?
-      Picture.find_all_by_id(image_ids).each do |picture|
+      Picture.where(id: image_ids).each do |picture|
         picture.update_attributes(article_id: self.id)
       end
     end

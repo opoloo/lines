@@ -2,7 +2,7 @@
 class Admin::PicturesController < Admin::ApplicationController
 
   def create
-    @picture = Picture.create(params[:picture])
+    @picture = Picture.create(picture_params)
   end
 
   # PUT /admin/pictures/1
@@ -10,7 +10,7 @@ class Admin::PicturesController < Admin::ApplicationController
     @picture = Picture.find(params[:id])
 
     respond_to do |format|
-      if @picture.update_attributes(params[:picture])
+      if @picture.update_attributes(picture_params[:picture])
         format.html { redirect_to @picture, notice: 'Picture was successfully updated.' }
       else
         format.html { render action: "edit" }
@@ -27,4 +27,11 @@ class Admin::PicturesController < Admin::ApplicationController
       format.js
     end
   end
+
+  private
+
+    # strong_params
+    def picture_params
+      params.fetch(:picture, {}).permit(:image)
+    end
 end

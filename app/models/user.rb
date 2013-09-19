@@ -7,16 +7,15 @@
 #   # Create a new user:
 #   User.create(email: 'mail@example.com', password: 'ultrasekret')
 #   # Find a specific user and modify:
-#   u = User.find_by_email('mail@example.com')
+#   u = User.where(email: 'mail@example.com')
 #   u.email = 'new@example.com'
 #   u.password = 'newsecret'
 #   u.save
 class User < ActiveRecord::Base
   # use bcrypt-ruby to encrypt passwords
-  has_secure_password
-
-  # Attribute access control
-  attr_accessible :email, :password
+  has_secure_password validations: false
+  validates :password, length: { minimum: 6 }, allow_blank: false
+  validates :password, presence: true, on: :create
 
   # Validations
   validates :password, length: { minimum: 6 }, if: :validate_password?

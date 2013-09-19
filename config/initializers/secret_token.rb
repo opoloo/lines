@@ -5,3 +5,4 @@
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
 Lines::Application.config.secret_token = CONFIG[:secret_token]
+Lines::Application.config.secret_key_base = CONFIG[:secret_token] 

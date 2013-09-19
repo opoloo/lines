@@ -6,7 +6,7 @@
 class Admin::ArticlesController < Admin::ApplicationController
 
   autocomplete :tag, :name, class_name: 'ActsAsTaggableOn::Tag'
-  before_filter :process_base64_upload, only: [:create, :update]
+  before_action :process_base64_upload, only: [:create, :update]
 
   # Lists all articles. Provides <tt>@articles_unpublished</tt> and 
   # <tt>@articles_published</tt> to distinguish between published and
@@ -46,7 +46,7 @@ class Admin::ArticlesController < Admin::ApplicationController
 
   # POST /admin/articles
   def create
-    @article = Article.new(params[:article])
+    @article = Article.new(article_params)
 
     respond_to do |format|
       if @article.save
@@ -61,13 +61,13 @@ class Admin::ArticlesController < Admin::ApplicationController
   # TODO: Very much is happening here. Move deletion of hero_image to the article model
   def update
     @article = Article.find(params[:id])
-    article_params = params[:article]
+    a_params = article_params
 
     # replace picture_path with the new uploaded file
-    article_params[:hero_image] = @uploaded_file if @uploaded_file
+    a_params[:hero_image] = @uploaded_file if @uploaded_file
 
     # delete uploaded hero image when predifined image is selected
-    if !article_params[:hero_image_cache].present? && article_params[:short_hero_image].present?
+    if !a_params[:hero_image_cache].present? && a_params[:short_hero_image].present?
       @article.remove_hero_image! 
       @article.remove_hero_image = true 
       @article.save
@@ -103,7 +103,7 @@ class Admin::ArticlesController < Admin::ApplicationController
   # Toggles featured state of an article
   def toggle_feature
     @article = Article.find(params[:article_id])
-    old_featured = Article.find_all_by_featured(true)
+    old_featured = Article.where(featured: true)
     if old_featured.size > 0
       old_featured.each do |article|
         article.update_attributes(featured: false)
@@ -151,5 +151,15 @@ class Admin::ArticlesController < Admin::ApplicationController
         }
     end
   end
+
+  private
+
+    # Allowed attribute with strong_params
+    def article_params
+      params.require(:article).permit(:content, :hero_image, :short_hero_image, :published, :published_at, 
+        :sub_title, :title, :pictures, :author_ids, :hero_image_cache, :tag_list, :gplus_url, :featured, 
+        :document, :document_cache, :hero_image_file, :remove_document, :pictures, :authors,
+        pictures_attributes: [:id, :image, :name, :article_id], author_ids: [] )
+    end
 
 end

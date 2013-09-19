@@ -5,11 +5,12 @@ def login_and_visit_new_article
   expect(page).to have_content('Logged in')
   @author = FactoryGirl.create(:author, name: "Foo Bar")
   visit admin_articles_path
-  expect(page).to have_content('New Article')
   click_on "New Article"
+  expect(page).to have_content('New article')
 end
 
 def create_valid_article
+  expect(page).to have_content('New article')
   fill_in "Title", with: "How to Test"
   fill_in "Content", with: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -22,6 +23,7 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
   fill_in "G+ URL", with: "http://gplus.de/opoloo"
   attach_file('article_hero_image', File.join(Rails.root, '/spec/support/images/example.jpg'))
   click_on "Save"
+  expect(page).to have_content "How to Test"
 end
 
 feature 'user creates article' do
@@ -52,7 +54,7 @@ feature 'user publishes an article' do
   before(:each) do
     login_and_visit_new_article
   end
-  scenario 'article is unpublished' do
+  scenario 'with article is unpublished' do
     create_valid_article
     click_on "Publish"
     page.find("table.published").should have_content "How to Test"

@@ -59,7 +59,7 @@ Currently Lines does not offer a GUI for managing users. Just open a console wit
   User.create(email: "your@email.com", password: "yoursecret")
 
   # UPDATE an existing user
-  u = User.find_by_email('your@email.com')
+  u = User.where(email: 'your@email.com')
   u.email = "new@mail.com"
   u.password = "newsekret"
   u.save

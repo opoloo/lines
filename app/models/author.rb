@@ -3,10 +3,7 @@
 # An {Author} is unrelated to the currently logged in user. This allows to publish
 # {Article}s by guest authors that don't need an own user account
 class Author < ActiveRecord::Base
-  
-  # Attribute access control
-  attr_accessible :email, :name, :description, :gplus_profile
-  
+    
   # Relations
   has_many :authorables
   has_many :articles, through: :authorables

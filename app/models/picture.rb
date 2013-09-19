@@ -5,9 +5,6 @@ class Picture < ActiveRecord::Base
   # Associations    
   belongs_to :article, touch: true
 
-  # Attribute access control
-  attr_accessible :image, :name, :article_id
-
   # Mount carrierwave picture uploader
   mount_uploader :image, PictureUploader
 

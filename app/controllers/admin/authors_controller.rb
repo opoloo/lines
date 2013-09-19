@@ -1,22 +1,29 @@
 # Provides CRUD actions for +Author+ model.
 class Admin::AuthorsController < Admin::ApplicationController
 
+  before_action :author_params
+
+  # Listes all authroes
   def index
     @authors = Author.all
   end
 
+  # Shows an author
   def show
     @author = Author.find(params[:id])
   end
 
+  # New author
   def new
     @author = Author.new
   end
 
+  # Edit an existing author
   def edit
     @author = Author.find(params[:id])
   end
 
+  # Create a new author from params
   def create
     @author = Author.new(params[:author])
 
@@ -27,6 +34,7 @@ class Admin::AuthorsController < Admin::ApplicationController
     end
   end
 
+  # Update an existing author from params
   def update
     @author = Author.find(params[:id])
 
@@ -37,6 +45,7 @@ class Admin::AuthorsController < Admin::ApplicationController
     end
   end
 
+  # Delete an author
   def destroy
     @author = Author.find(params[:id])
     if @author.destroy
@@ -46,4 +55,11 @@ class Admin::AuthorsController < Admin::ApplicationController
       render "index" 
     end
   end
+
+  private
+
+    # Use strong_params
+    def author_params
+      params.require(:author).permit(:email, :name, :description, :gplus_profile)
+    end
 end
