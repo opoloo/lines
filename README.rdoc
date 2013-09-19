@@ -50,7 +50,7 @@ If you prefer a cutting edge Rails 4 version of Lines, checkout the {rails4 bran
     cd lines
 
 3. There is a installation task that will guide you through the rest of the installation process. Just switch to the 'lines' directory and run:
-    bundle exec rake lines:setup
+    ruby install.rb
 
 If you need some more information or help, you can just follow this readme file.
 
