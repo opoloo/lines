@@ -8,6 +8,10 @@ Lines is a very slim, feature-constrained, young publishing platform. It is not 
 
 To get an idea of the appearance, see the screenshots below, visit the {Lines Website}[http://lines.opoloo.com], or see it in action at link: http://blog.opoloo.com
 
+== Note for Rails 4 lovers
+
+If you prefer a cutting edge Rails 4 version of Lines, checkout the {rails4 branch}[https://github.com/opoloo/lines/tree/rails4]
+
 == Features & Specifications
 
 - based on Rails 3.2
