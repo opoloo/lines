@@ -10,7 +10,7 @@ To get an idea of the appearance, see the screenshots below, visit the {Lines We
 
 == Features & Specifications
 
-- based on Rails 3.2
+- based on Rails 4.0
 - solid editing system
 - simple, consistent publishing process
 - clear, responsive presentation

@@ -6,7 +6,7 @@
 <title>
   Class: Admin::ArticlesController
   
-    &mdash; Documentation by YARD 0.8.7
+    &mdash; Documentation by YARD 0.8.7.1
   
 </title>
 
@@ -445,7 +445,7 @@ encoded file uploads and toggling of  published and featured state of an
       <pre class="code"><span class="info file"># File 'app/controllers/admin/articles_controller.rb', line 48</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_create'>create</span>
-  <span class='ivar'>@article</span> <span class='op'>=</span> <span class='const'>Article</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='id identifier rubyid_params'>params</span><span class='lbracket'>[</span><span class='symbol'>:article</span><span class='rbracket'>]</span><span class='rparen'>)</span>
+  <span class='ivar'>@article</span> <span class='op'>=</span> <span class='const'>Article</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='id identifier rubyid_article_params'>article_params</span><span class='rparen'>)</span>
 
   <span class='id identifier rubyid_respond_to'>respond_to</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_format'>format</span><span class='op'>|</span>
     <span class='kw'>if</span> <span class='ivar'>@article</span><span class='period'>.</span><span class='id identifier rubyid_save'>save</span>
@@ -879,7 +879,7 @@ unpublished articles</p>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_toggle_feature'>toggle_feature</span>
   <span class='ivar'>@article</span> <span class='op'>=</span> <span class='const'>Article</span><span class='period'>.</span><span class='id identifier rubyid_find'>find</span><span class='lparen'>(</span><span class='id identifier rubyid_params'>params</span><span class='lbracket'>[</span><span class='symbol'>:article_id</span><span class='rbracket'>]</span><span class='rparen'>)</span>
-  <span class='id identifier rubyid_old_featured'>old_featured</span> <span class='op'>=</span> <span class='const'>Article</span><span class='period'>.</span><span class='id identifier rubyid_find_all_by_featured'>find_all_by_featured</span><span class='lparen'>(</span><span class='kw'>true</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_old_featured'>old_featured</span> <span class='op'>=</span> <span class='const'>Article</span><span class='period'>.</span><span class='id identifier rubyid_where'>where</span><span class='lparen'>(</span><span class='label'>featured:</span> <span class='kw'>true</span><span class='rparen'>)</span>
   <span class='kw'>if</span> <span class='id identifier rubyid_old_featured'>old_featured</span><span class='period'>.</span><span class='id identifier rubyid_size'>size</span> <span class='op'>&gt;</span> <span class='int'>0</span>
     <span class='id identifier rubyid_old_featured'>old_featured</span><span class='period'>.</span><span class='id identifier rubyid_each'>each</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_article'>article</span><span class='op'>|</span>
       <span class='id identifier rubyid_article'>article</span><span class='period'>.</span><span class='id identifier rubyid_update_attributes'>update_attributes</span><span class='lparen'>(</span><span class='label'>featured:</span> <span class='kw'>false</span><span class='rparen'>)</span>
@@ -994,13 +994,13 @@ hero_image to the article model</p>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_update'>update</span>
   <span class='ivar'>@article</span> <span class='op'>=</span> <span class='const'>Article</span><span class='period'>.</span><span class='id identifier rubyid_find'>find</span><span class='lparen'>(</span><span class='id identifier rubyid_params'>params</span><span class='lbracket'>[</span><span class='symbol'>:id</span><span class='rbracket'>]</span><span class='rparen'>)</span>
-  <span class='id identifier rubyid_article_params'>article_params</span> <span class='op'>=</span> <span class='id identifier rubyid_params'>params</span><span class='lbracket'>[</span><span class='symbol'>:article</span><span class='rbracket'>]</span>
+  <span class='id identifier rubyid_a_params'>a_params</span> <span class='op'>=</span> <span class='id identifier rubyid_article_params'>article_params</span>
 
   <span class='comment'># replace picture_path with the new uploaded file
-</span>  <span class='id identifier rubyid_article_params'>article_params</span><span class='lbracket'>[</span><span class='symbol'>:hero_image</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='ivar'>@uploaded_file</span> <span class='kw'>if</span> <span class='ivar'>@uploaded_file</span>
+</span>  <span class='id identifier rubyid_a_params'>a_params</span><span class='lbracket'>[</span><span class='symbol'>:hero_image</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='ivar'>@uploaded_file</span> <span class='kw'>if</span> <span class='ivar'>@uploaded_file</span>
 
   <span class='comment'># delete uploaded hero image when predifined image is selected
-</span>  <span class='kw'>if</span> <span class='op'>!</span><span class='id identifier rubyid_article_params'>article_params</span><span class='lbracket'>[</span><span class='symbol'>:hero_image_cache</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_present?'>present?</span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_article_params'>article_params</span><span class='lbracket'>[</span><span class='symbol'>:short_hero_image</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_present?'>present?</span>
+</span>  <span class='kw'>if</span> <span class='op'>!</span><span class='id identifier rubyid_a_params'>a_params</span><span class='lbracket'>[</span><span class='symbol'>:hero_image_cache</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_present?'>present?</span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_a_params'>a_params</span><span class='lbracket'>[</span><span class='symbol'>:short_hero_image</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_present?'>present?</span>
     <span class='ivar'>@article</span><span class='period'>.</span><span class='id identifier rubyid_remove_hero_image!'>remove_hero_image!</span> 
     <span class='ivar'>@article</span><span class='period'>.</span><span class='id identifier rubyid_remove_hero_image'>remove_hero_image</span> <span class='op'>=</span> <span class='kw'>true</span> 
     <span class='ivar'>@article</span><span class='period'>.</span><span class='id identifier rubyid_save'>save</span>
@@ -1025,9 +1025,9 @@ hero_image to the article model</p>
 </div>
 
     <div id="footer">
-  Generated on Thu Sep 12 16:33:05 2013 by
+  Generated on Thu Sep 19 11:06:59 2013 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
-  0.8.7 (ruby-2.0.0).
+  0.8.7.1 (ruby-2.0.0).
 </div>
 
   </body>

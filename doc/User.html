@@ -6,7 +6,7 @@
 <title>
   Class: User
   
-    &mdash; Documentation by YARD 0.8.7
+    &mdash; Documentation by YARD 0.8.7.1
   
 </title>
 
@@ -113,7 +113,7 @@ manage users, they have to be modified via Rails console.</p>
 <span class='comment'># Create a new user:
 </span><span class='const'>User</span><span class='period'>.</span><span class='id identifier rubyid_create'>create</span><span class='lparen'>(</span><span class='label'>email:</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>mail@example.com</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='label'>password:</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>ultrasekret</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
 <span class='comment'># Find a specific user and modify:
-</span><span class='id identifier rubyid_u'>u</span> <span class='op'>=</span> <span class='const'>User</span><span class='period'>.</span><span class='id identifier rubyid_find_by_email'>find_by_email</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>mail@example.com</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
+</span><span class='id identifier rubyid_u'>u</span> <span class='op'>=</span> <span class='const'>User</span><span class='period'>.</span><span class='id identifier rubyid_where'>where</span><span class='lparen'>(</span><span class='label'>email:</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>mail@example.com</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
 <span class='id identifier rubyid_u'>u</span><span class='period'>.</span><span class='id identifier rubyid_email'>email</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>new@example.com</span><span class='tstring_end'>&#39;</span></span>
 <span class='id identifier rubyid_u'>u</span><span class='period'>.</span><span class='id identifier rubyid_password'>password</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>newsecret</span><span class='tstring_end'>&#39;</span></span>
 <span class='id identifier rubyid_u'>u</span><span class='period'>.</span><span class='id identifier rubyid_save'>save</span></code></pre>
@@ -137,9 +137,9 @@ manage users, they have to be modified via Rails console.</p>
 </div>
 
     <div id="footer">
-  Generated on Thu Sep 12 16:33:04 2013 by
+  Generated on Thu Sep 19 11:06:58 2013 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
-  0.8.7 (ruby-2.0.0).
+  0.8.7.1 (ruby-2.0.0).
 </div>
 
   </body>

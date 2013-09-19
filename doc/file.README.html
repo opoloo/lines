@@ -6,7 +6,7 @@
 <title>
   File: README
   
-    &mdash; Documentation by YARD 0.8.7
+    &mdash; Documentation by YARD 0.8.7.1
   
 </title>
 
@@ -80,7 +80,7 @@ link: <a href="http://blog.opoloo.com">blog.opoloo.com</a></p>
 
 <h2 id="label-Features+%26+Specifications">Features &amp; Specifications</h2>
 <ul><li>
-<p>based on Rails 3.2</p>
+<p>based on Rails 4.0</p>
 </li><li>
 <p>solid editing system</p>
 </li><li>
@@ -157,7 +157,7 @@ console with &#39;rails c&#39; and add/change a user manually:</p>
 </span><span class='const'>User</span><span class='period'>.</span><span class='id identifier rubyid_create'>create</span><span class='lparen'>(</span><span class='label'>email:</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>your@email.com</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='label'>password:</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>yoursecret</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
 
 <span class='comment'># UPDATE an existing user
-</span><span class='id identifier rubyid_u'>u</span> <span class='op'>=</span> <span class='const'>User</span><span class='period'>.</span><span class='id identifier rubyid_find_by_email'>find_by_email</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>your@email.com</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
+</span><span class='id identifier rubyid_u'>u</span> <span class='op'>=</span> <span class='const'>User</span><span class='period'>.</span><span class='id identifier rubyid_where'>where</span><span class='lparen'>(</span><span class='label'>email:</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>your@email.com</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
 <span class='id identifier rubyid_u'>u</span><span class='period'>.</span><span class='id identifier rubyid_email'>email</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>new@mail.com</span><span class='tstring_end'>&quot;</span></span>
 <span class='id identifier rubyid_u'>u</span><span class='period'>.</span><span class='id identifier rubyid_password'>password</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>newsekret</span><span class='tstring_end'>&quot;</span></span>
 <span class='id identifier rubyid_u'>u</span><span class='period'>.</span><span class='id identifier rubyid_save'>save</span></code></pre>
@@ -197,6 +197,11 @@ bundle exec rake sitemap:refresh         # ping search engines</code></pre>
 
 <p>Don&#39;t forget to adjust the full url to your sitemaps in
 <code>public/robots.txt</code></p>
+
+<h2 id="label-Documentation">Documentation</h2>
+
+<p>The complete documentation can be found at rdoc.info: <a
+href="http://rdoc.info/github/opoloo/lines/master/frames">rdoc.info/github/opoloo/lines/master/frames</a></p>
 
 <h2 id="label-Customization">Customization</h2>
 
@@ -248,9 +253,9 @@ href="http://choosealicense.com/licenses/lgpl-v3">choosealicense.com/licenses/lg
 </div></div>
 
     <div id="footer">
-  Generated on Thu Sep 12 16:33:04 2013 by
+  Generated on Thu Sep 19 11:06:58 2013 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
-  0.8.7 (ruby-2.0.0).
+  0.8.7.1 (ruby-2.0.0).
 </div>
 
   </body>
