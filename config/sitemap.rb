@@ -1,5 +1,5 @@
 # Set the host name for URL creation
-SitemapGenerator::Sitemap.default_host = CONFIG[:host]
+SitemapGenerator::Sitemap.default_host = "http://#{CONFIG[:host]}"
 
 SitemapGenerator::Sitemap.create do
   Article.published.find_each do |article|
